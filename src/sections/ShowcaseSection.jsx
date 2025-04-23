@@ -1,0 +1,96 @@
+import { useRef } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useGSAP } from "@gsap/react";
+
+gsap.registerPlugin(ScrollTrigger);
+
+const AppShowcase = () => {
+  const sectionRef = useRef(null);
+  const researchRef = useRef(null);
+  const legalRef = useRef(null);
+  const webScrapingRef = useRef(null);
+
+  useGSAP(() => {
+    // Animation for the main section
+    gsap.fromTo(
+      sectionRef.current,
+      { opacity: 0 },
+      { opacity: 1, duration: 1.5 }
+    );
+
+    // Animations for each app showcase
+    const cards = [researchRef.current, legalRef.current, webScrapingRef.current];
+
+    cards.forEach((card, index) => {
+      gsap.fromTo(
+        card,
+        {
+          y: 50,
+          opacity: 0,
+        },
+        {
+          y: 0,
+          opacity: 1,
+          duration: 1,
+          delay: 0.3 * (index + 1),
+          scrollTrigger: {
+            trigger: card,
+            start: "top bottom-=100",
+          },
+        }
+      );
+    });
+  }, []);
+
+  return (
+    <div id="agents" ref={sectionRef} className="app-showcase">
+      <div className="w-full">
+        <div className="showcaselayout">
+          <div ref={researchRef} className="first-project-wrapper">
+            <div className="image-wrapper">
+              <img 
+                src="/images/Robot_project1.png" 
+                alt="AI Research Agent" 
+              />
+            </div>
+            <div className="text-content">
+              <h2>
+              <span style={{ color: 'var(--color-purple-100)' }}>AI Research Agent</span> delves into scholarly databases and institutional repositories to deliver rigorously cited, academically grounded responses to multifaceted inquiries. 
+              </h2>
+              <p className="text-white-50 md:text-xl">
+                A web app built with Langchain, PostgreSQL, and deployed on Streamlit.
+              </p>
+            </div>
+          </div>
+
+          <div className="project-list-wrapper overflow-hidden">
+            <div ref={legalRef} className="project">
+              <div className="image-wrapper bg-[#ea2081]">
+                <img
+                  src="/images/Robot_project2.png"
+                  alt="AI Legal Agent"
+                />
+              </div>
+              <h2>
+              <span style={{ color: 'var(--color-pink-100)' }}>AI Legal Agent</span> systematically maps statutory frameworks and regulatory provisions, curating precise legal excerpts relevant to specified jurisdictional queries.</h2>
+            </div>
+
+            <div ref={webScrapingRef} className="project" >
+              <div className="image-wrapper bg-[#52bcff]">
+                <img 
+                  src="/images/Robot_project3.png" 
+                    alt="AI Web Scraping Agent"                     
+                />
+              </div>
+              <h2>
+              <span style={{ color: 'var(--color-blue-10)' }}>AI Web Scraping Agent</span> methodically harvests and structures textual and visual content from web sources, presenting organized datasets with clear provenance documentation.</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default AppShowcase;
