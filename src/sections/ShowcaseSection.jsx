@@ -66,19 +66,19 @@ const AppShowcase = () => {
               </div>
             </GlowCard>
 
-            <GlowCard card={{ review: 'AI Research Agent' }} index={3}>
+            <GlowCard card={{ review: 'AI Voice Agent' }} index={3}>
             <div className="image-wrapper" style={{ border: `20px solid var(--color-pink-100)` }}>
                 <img 
-                  src="/images/Robot_project1.png" 
-                  alt="AI Research Agent" 
+                  src="/images/Robot_project4.png" 
+                  alt="AI Voice Agent" 
                 />
               </div>
               <div className="text-content">
                 <h2>
-                  <span style={{ color: 'var(--color-pink-100)' }}>AI Research Agent</span> delves into scholarly databases and institutional repositories to deliver rigorously cited, academically grounded responses to multifaceted inquiries. 
+                  <span style={{ color: 'var(--color-pink-100)' }}>AI Voice Agent</span> utilizes cutting-edge voice synthesis and natural language processing to engage in dynamic, context-aware conversations, offering real-time, personalized responses across various domains. 
                 </h2>
                 <p className="text-white-50 md:text-xl">
-                  A web app built with Langchain, PostgreSQL, and deployed on Streamlit.
+                  A web app powered by Langchain, VAPI, PostgreSQL, and deployed using Streamlit for seamless integration and intelligent voice interaction.
                 </p>
               </div>
             </GlowCard>

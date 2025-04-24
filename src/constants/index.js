@@ -16,7 +16,7 @@ const navLinks = [
     { text: "Planning", imgPath: "/images/planning.svg" },
     { text: "Review", imgPath: "/images/review.svg" },
     { text: "Finance", imgPath: "/images/finance.svg" },
-    { text: "Mapping", imgPath: "/images/mapping.svg" },
+    { text: "Mapping", imgPath: "/images/drone.svg" },
     { text: "Security", imgPath: "/images/security.svg" },
   ];
   
