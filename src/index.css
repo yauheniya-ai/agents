@@ -170,7 +170,7 @@ section {
       .image-wrapper {
         @apply xl:h-[70vh] md:h-[50vh] h-96 relative;
         /* Add outline styles here */
-        border: 20px solid var(--color-purple-100);
+        border: 10px solid var(--color-purple-100);
         border-radius: 0.75rem; /* matches rounded-xl */
         padding: 4px; /* creates space between image and border */
     

@@ -91,7 +91,7 @@ const navLinks = [
     },
     {
       name: "orcid",
-      url: "https://www.orcid.com/",
+      url: "https://orcid.org/0000-0002-7193-1238",
       imgPath: "/images/orcid.svg",
     },
     {

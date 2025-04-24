@@ -67,7 +67,7 @@ const AppShowcase = () => {
             </GlowCard>
 
             <GlowCard card={{ review: 'AI Voice Agent' }} index={3}>
-            <div className="image-wrapper" style={{ border: `20px solid var(--color-pink-100)` }}>
+            <div className="image-wrapper" style={{ border: `10px solid var(--color-pink-100)` }}>
                 <img 
                   src="/images/Robot_project4.png" 
                   alt="AI Voice Agent" 
@@ -75,7 +75,7 @@ const AppShowcase = () => {
               </div>
               <div className="text-content">
                 <h2>
-                  <span style={{ color: 'var(--color-pink-100)' }}>AI Voice Agent</span> utilizes cutting-edge voice synthesis and natural language processing to engage in dynamic, context-aware conversations, offering real-time, personalized responses across various domains. 
+                  <span style={{ color: 'var(--color-pink-100)' }}>AI Voice Agent</span> leverages advanced voice synthesis and natural language processing to deliver real-time, personalized, and context-aware conversations. 
                 </h2>
                 <p className="text-white-50 md:text-xl">
                   A web app powered by Langchain, VAPI, PostgreSQL, and deployed using Streamlit for seamless integration and intelligent voice interaction.
