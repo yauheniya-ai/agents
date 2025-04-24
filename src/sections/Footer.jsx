@@ -9,16 +9,19 @@ const Footer = () => {
         </div>
         <div className="socials flex gap-4">
           {socialImgs.map((socialImg, index) => (
-            <div 
-              key={index} 
+            <a
+              key={index}
+              href={socialImg.url}
+              target="_blank"
+              rel="noopener noreferrer"
               className="icon w-10 h-10 rounded-full bg-[#e6e2fe] flex items-center justify-center transition-colors duration-300 hover:bg-white"
             >
-              <img 
-                src={socialImg.imgPath} 
-                alt="social icon" 
-                className="w-5 h-5" 
+              <img
+                src={socialImg.imgPath}
+                alt={`${socialImg.name} icon`}
+                className="w-5 h-5"
               />
-            </div>
+            </a>
           ))}
         </div>
         <div className="flex flex-col justify-center">

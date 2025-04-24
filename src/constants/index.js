@@ -81,12 +81,12 @@ const navLinks = [
   const socialImgs = [
     {
       name: "github",
-      url: "https://www.github.com/",
+      url: "https://www.github.com/yauheniya-ai",
       imgPath: "/images/github.svg",
     },
     {
       name: "medium",
-      url: "https://www.medium.com/",
+      url: "https://medium.com/@yauheniya.ai",
       imgPath: "/images/medium.svg",
     },
     {
@@ -101,7 +101,7 @@ const navLinks = [
     },
     {
       name: "linkedin",
-      url: "https://www.linkedin.com/",
+      url: "linkedin.com/in/yauheniya-varabyova",
       imgPath: "/images/linkedin.svg",
     },
   ];

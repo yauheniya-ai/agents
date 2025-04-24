@@ -69,7 +69,7 @@ const AppShowcase = () => {
             <GlowCard card={{ review: 'AI Voice Agent' }} index={3}>
             <div className="image-wrapper" style={{ border: `10px solid var(--color-pink-100)` }}>
                 <img 
-                  src="/images/Robot_project4.png" 
+                  src="/images/Robot_project4.gif" 
                   alt="AI Voice Agent" 
                 />
               </div>
