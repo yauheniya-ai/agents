@@ -1,6 +1,4 @@
 import { useRef, useState } from "react";
-import emailjs from "@emailjs/browser";
-
 import TitleHeader from "../components/TitleHeader";
 import ContactExperience from "../components/models/contact/ContactExperience";
 
@@ -12,6 +10,7 @@ const Contact = () => {
     email: "",
     message: "",
   });
+  const [success, setSuccess] = useState(null);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -20,22 +19,27 @@ const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setLoading(true); // Show loading state
-
+    setLoading(true);
+    setSuccess(null);
     try {
-      await emailjs.sendForm(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
-        formRef.current,
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
-      );
-
-      // Reset form and stop loading
-      setForm({ name: "", email: "", message: "" });
+      const response = await fetch("https://formspree.io/f/mdkgovyw", {
+        method: "POST",
+        headers: {
+          "Accept": "application/json",
+        },
+        body: new FormData(formRef.current),
+      });
+      const data = await response.json();
+      if (data.ok) {
+        setSuccess("Thank you! Your message has been sent.");
+        setForm({ name: "", email: "", message: "" });
+      } else {
+        setSuccess("Sorry, something went wrong. Please try again later.");
+      }
     } catch (error) {
-      console.error("EmailJS Error:", error); // Optional: show toast
+      setSuccess("Sorry, something went wrong. Please try again later.");
     } finally {
-      setLoading(false); // Always stop loading, even on error
+      setLoading(false);
     }
   };
 
@@ -50,7 +54,8 @@ const Contact = () => {
                   width="24" 
                   height="24" 
                   alt="Robot arm"
-                  className="text-white"
+                  className="text-white transform scale-x-[-1]"
+                  style={{ transform: 'scaleX(+1)' }}
                 />
                 Let's automate!
                 <img 
@@ -58,9 +63,9 @@ const Contact = () => {
                   width="24" 
                   height="24" 
                   alt="Robot arm"
-                  className="text-white transform scale-x-[-1]"
-                  style={{ transform: 'scaleX(+1)' }}
+                  className="text-white"
                 />
+
               </span>
             }
             title="Which AI Agents Do You Develop?"
@@ -72,6 +77,8 @@ const Contact = () => {
                 ref={formRef}
                 onSubmit={handleSubmit}
                 className="w-full flex flex-col gap-7"
+                method="POST"
+                action="https://formspree.io/f/mdkgovyw"
               >
                 <div>
                   <label htmlFor="name">Your name</label>
@@ -112,7 +119,7 @@ const Contact = () => {
                   />
                 </div>
 
-                <button type="submit">
+                <button type="submit" disabled={loading}>
                   <div className="cta-button group">
                     <div className="bg-circle" />
                     <p className="text">
@@ -123,6 +130,9 @@ const Contact = () => {
                     </div>
                   </div>
                 </button>
+                {success && (
+                  <p className="mt-4 text-center" style={{ color: success.startsWith('Thank') ? 'green' : 'red' }}>{success}</p>
+                )}
               </form>
             </div>
           </div>
