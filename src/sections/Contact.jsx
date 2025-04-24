@@ -31,13 +31,22 @@ const Contact = () => {
       });
       const data = await response.json();
       if (data.ok) {
-        setSuccess("Thank you! Your message has been sent.");
+        setSuccess({
+          type: "success",
+          message: `Thank you, <span style="color:#52bcff">${form.name}</span>. We will get back at you within 24 hours via email: <span style="color:#52bcff">${form.email}</span>.`
+        });
         setForm({ name: "", email: "", message: "" });
       } else {
-        setSuccess("Sorry, something went wrong. Please try again later.");
+        setSuccess({
+          type: "error",
+          message: "Sorry, something went wrong. Please try again later."
+        });
       }
     } catch (error) {
-      setSuccess("Sorry, something went wrong. Please try again later.");
+      setSuccess({
+        type: "error",
+        message: "Sorry, something went wrong. Please try again later."
+      });
     } finally {
       setLoading(false);
     }
@@ -131,8 +140,13 @@ const Contact = () => {
                   </div>
                 </button>
                 {success && (
-                  <p className="mt-4 text-center" style={{ color: success.startsWith('Thank') ? 'green' : 'red' }}>{success}</p>
+                  <p
+                    className="mt-4 text-center"
+                    style={{ color: success.type === "error" ? "#ea2081" : "white" }}
+                    dangerouslySetInnerHTML={{ __html: success.message }}
+                  />
                 )}
+
               </form>
             </div>
           </div>
