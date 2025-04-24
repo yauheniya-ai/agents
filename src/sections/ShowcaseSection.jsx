@@ -2,6 +2,7 @@ import { useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
+import GlowCard from "../components/GlowCard";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -48,24 +49,26 @@ const AppShowcase = () => {
       <div className="w-full">
         <div className="showcaselayout">
           <div ref={researchRef} className="first-project-wrapper">
-            <div className="image-wrapper">
-              <img 
-                src="/images/Robot_project1.png" 
-                alt="AI Research Agent" 
-              />
-            </div>
-            <div className="text-content">
-              <h2>
-              <span style={{ color: 'var(--color-purple-100)' }}>AI Research Agent</span> delves into scholarly databases and institutional repositories to deliver rigorously cited, academically grounded responses to multifaceted inquiries. 
-              </h2>
-              <p className="text-white-50 md:text-xl">
-                A web app built with Langchain, PostgreSQL, and deployed on Streamlit.
-              </p>
-            </div>
+            <GlowCard card={{ review: 'AI Research Agent' }} index={0}>
+              <div className="image-wrapper">
+                <img 
+                  src="/images/Robot_project1.png" 
+                  alt="AI Research Agent" 
+                />
+              </div>
+              <div className="text-content">
+                <h2>
+                  <span style={{ color: 'var(--color-purple-100)' }}>AI Research Agent</span> delves into scholarly databases and institutional repositories to deliver rigorously cited, academically grounded responses to multifaceted inquiries. 
+                </h2>
+                <p className="text-white-50 md:text-xl">
+                  A web app built with Langchain, PostgreSQL, and deployed on Streamlit.
+                </p>
+              </div>
+            </GlowCard>
           </div>
 
           <div className="project-list-wrapper overflow-hidden">
-            <div ref={legalRef} className="project">
+            <GlowCard card={{ review: 'AI Legal Agent' }} index={1} ref={legalRef}>
               <div className="image-wrapper bg-[#ea2081]">
                 <img
                   src="/images/Robot_project2.png"
@@ -73,19 +76,21 @@ const AppShowcase = () => {
                 />
               </div>
               <h2>
-              <span style={{ color: 'var(--color-pink-100)' }}>AI Legal Agent</span> systematically maps statutory frameworks and regulatory provisions, curating precise legal excerpts relevant to specified jurisdictional queries.</h2>
-            </div>
+                <span style={{ color: 'var(--color-pink-100)' }}>AI Legal Agent</span> systematically maps statutory frameworks and regulatory provisions, curating precise legal excerpts relevant to specified jurisdictional queries.
+              </h2>
+            </GlowCard>
 
-            <div ref={webScrapingRef} className="project" >
+            <GlowCard card={{ review: 'AI Web Scraping Agent' }} index={2} ref={webScrapingRef}>
               <div className="image-wrapper bg-[#52bcff]">
                 <img 
                   src="/images/Robot_project3.png" 
-                    alt="AI Web Scraping Agent"                     
+                  alt="AI Web Scraping Agent"                     
                 />
               </div>
               <h2>
-              <span style={{ color: 'var(--color-blue-10)' }}>AI Web Scraping Agent</span> methodically harvests and structures textual and visual content from web sources, presenting organized datasets with clear provenance documentation.</h2>
-            </div>
+                <span style={{ color: 'var(--color-blue-10)' }}>AI Web Scraping Agent</span> methodically harvests and structures textual and visual content from web sources, presenting organized datasets with clear provenance documentation.
+              </h2>
+            </GlowCard>
           </div>
         </div>
       </div>
