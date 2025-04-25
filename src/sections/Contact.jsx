@@ -11,6 +11,8 @@ const Contact = () => {
     message: "",
   });
   const [success, setSuccess] = useState(null);
+  const [gdprAccepted, setGdprAccepted] = useState(false);
+
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -128,7 +130,24 @@ const Contact = () => {
                   />
                 </div>
 
-                <button type="submit" disabled={loading}>
+                <div className="flex items-start text-sm mt-2">
+                  <div className="flex items-start space-x-3">
+                    <input
+                      type="checkbox"
+                      id="gdpr"
+                      checked={gdprAccepted}
+                      onChange={() => setGdprAccepted(!gdprAccepted)}
+                      className="flex-none mt-1 accent-[#52bcff] w-4 h-4"
+                      required
+                    />
+                    <label htmlFor="gdpr">
+                      I agree to the processing of my data in accordance with the GDPR privacy policy.
+                    </label>
+                  </div>
+                </div>
+
+
+                <button type="submit" disabled={loading || !gdprAccepted}>
                   <div className="cta-button group">
                     <div className="bg-circle" />
                     <p className="text">
@@ -140,9 +159,11 @@ const Contact = () => {
                   </div>
                 </button>
                 {success && (
-                  <p
-                    className="mt-4 text-center"
-                    style={{ color: success.type === "error" ? "#ea2081" : "white" }}
+                  <div
+                    className={`text-sm px-4 py-3 rounded-lg ${
+                      success.type === "error" ? "bg-[#3a0a2a] text-[#ea2081]" : "bg-[#0a3a2a] text-white"
+                    }`}
+                    style={{ lineHeight: "1.5", textAlign: "left" }}
                     dangerouslySetInnerHTML={{ __html: success.message }}
                   />
                 )}
