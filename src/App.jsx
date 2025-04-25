@@ -2,7 +2,7 @@ import Footer from "./sections/Footer";
 import Contact from "./sections/Contact";
 import Hero from "./sections/Hero";
 import ShowcaseSection from "./sections/ShowcaseSection";
-import LogoShowcase from "./sections/LogoShowcase";
+import Technology from "./sections/Technology";
 import Navbar from "./components/NavBar";
 
 const App = () => (
@@ -10,7 +10,7 @@ const App = () => (
     <Navbar />
     <Hero />
     <ShowcaseSection />
-    <LogoShowcase />
+    <Technology />
     <Contact />
     <Footer />
   </>

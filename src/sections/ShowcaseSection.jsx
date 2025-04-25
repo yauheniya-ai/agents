@@ -63,7 +63,7 @@ const AppShowcase = () => {
                   <span style={{ color: 'var(--color-purple-100)' }}>AI Research Agent</span> delves into scholarly databases and institutional repositories to deliver rigorously cited, academically grounded responses to multifaceted inquiries. 
                 </h2>
                 <p className="text-white-50 md:text-xl">
-                  A web app built with Langchain, PostgreSQL, and deployed on Streamlit.
+                  #python, langchain, #postgresql, #cloudinary, #streamlit
                 </p>
               </div>
             </GlowCard>
@@ -80,7 +80,7 @@ const AppShowcase = () => {
                   <span style={{ color: 'var(--color-pink-100)' }}>AI Voice Agent</span> leverages advanced voice synthesis and natural language processing to deliver real-time, personalized, and context-aware conversations. 
                 </h2>
                 <p className="text-white-50 md:text-xl">
-                  A web app powered by Langchain, VAPI, PostgreSQL, and deployed using Streamlit for seamless integration and intelligent voice interaction.
+                #vapi, #python, #langchain, #postgresql, #streamlit 
                 </p>
               </div>
             </GlowCard>
@@ -97,6 +97,9 @@ const AppShowcase = () => {
               <h2>
                 <span style={{ color: 'var(--color-pink-100)' }}>AI Legal Agent</span> systematically maps statutory frameworks and regulatory provisions, curating precise legal excerpts relevant to specified jurisdictional queries.
               </h2>
+              <p className="text-white-50 md:text-xl mt-4">
+                  #python, langchain, #postgresql, #cloudinary, #streamlit
+              </p>
             </GlowCard>
 
             <GlowCard card={{ review: 'AI WebScraping Agent' }} index={2} ref={webScrapingRef}>
@@ -109,6 +112,9 @@ const AppShowcase = () => {
               <h2>
                 <span style={{ color: 'var(--color-blue-10)' }}>AI WebScraping Agent</span> methodically harvests and structures textual and visual content from web sources, presenting organized datasets with clear provenance documentation.
               </h2>
+              <p className="text-white-50 md:text-xl mt-4">
+                  #python
+              </p>
             </GlowCard>
 
             <GlowCard card={{ review: 'AI Coding Agent' }} index={2} ref={codingRef}>
@@ -121,6 +127,9 @@ const AppShowcase = () => {
               <h2>
                 <span style={{ color: 'var(--color-purple-100)' }}>AI Coding Agent</span> analyzes, debugs, and extends codebases, implementing fixes and features while maintaining documentation and version control.
               </h2>
+              <p className="text-white-50 md:text-xl mt-4">
+                  #python, #ollama, #llamaindex, #llamaparse
+              </p>
             </GlowCard>
           </div>
         </div>
