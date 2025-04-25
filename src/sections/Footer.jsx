@@ -5,8 +5,15 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-container">
         <div className="flex flex-col justify-center">
-          <p>Terms & Conditions</p>
-        </div>
+            <a
+              href="./agents/legal_notice"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white-50 hover:text-white hover:underline transition-colors duration-200"
+            >
+              Legal Notice
+            </a>
+          </div>
         <div className="socials flex gap-4">
           {socialImgs.map((socialImg, index) => (
             <a
