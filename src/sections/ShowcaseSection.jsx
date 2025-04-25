@@ -88,22 +88,22 @@ const AppShowcase = () => {
 
           <div className="project-list-wrapper overflow-hidden">
             <GlowCard card={{ review: 'AI Legal Agent' }} index={1} ref={legalRef}>
-              <div className="image-wrapper bg-[#ea2081]">
+              <div className="image-wrapper bg-[color:var(--color-gold-100)]">
                 <img
                   src="/images/Robot_project2.png"
                   alt="AI Legal Agent"
                 />
               </div>
               <h2>
-                <span style={{ color: 'var(--color-pink-100)' }}>AI Legal Agent</span> systematically maps statutory frameworks and regulatory provisions, curating precise legal excerpts relevant to specified jurisdictional queries.
+                <span style={{ color: 'var(--color-gold-100)' }}>AI Legal Agent</span> systematically maps statutory frameworks and regulatory provisions, curating precise legal excerpts relevant to specified jurisdictional queries.
               </h2>
               <p className="text-white-50 md:text-xl mt-4">
-                  #python, langchain, #postgresql, #cloudinary, #streamlit
+                  #python, #langchain, #postgresql, #cloudinary, #streamlit
               </p>
             </GlowCard>
 
             <GlowCard card={{ review: 'AI WebScraping Agent' }} index={2} ref={webScrapingRef}>
-              <div className="image-wrapper bg-[#52bcff]">
+              <div className="image-wrapper bg-[color:var(--color-blue-10)]">
                 <img 
                   src="/images/Robot_project3.png" 
                   alt="AI Web Scraping Agent"                     
@@ -113,12 +113,12 @@ const AppShowcase = () => {
                 <span style={{ color: 'var(--color-blue-10)' }}>AI WebScraping Agent</span> methodically harvests and structures textual and visual content from web sources, presenting organized datasets with clear provenance documentation.
               </h2>
               <p className="text-white-50 md:text-xl mt-4">
-                  #python
+                  #python, #streamlit, #selenium, #langchain
               </p>
             </GlowCard>
 
             <GlowCard card={{ review: 'AI Coding Agent' }} index={2} ref={codingRef}>
-              <div className="image-wrapper bg-[#8b76e9]">
+              <div className="image-wrapper bg-[color:var(--color-purple-100)]">
                 <img 
                   src="/images/Robot_project5.png" 
                   alt="AI Coding Agent"                     

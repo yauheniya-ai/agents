@@ -30,6 +30,7 @@ section {
   --color-blue-100: #e1effa;
   --color-pink-100: #ea2081;
   --color-purple-100: #8b76e9;
+  --color-gold-100: #EEA705;
 }
 
 @layer utilities {

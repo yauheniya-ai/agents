@@ -82,6 +82,12 @@ const navLinks = [
     {
       imgPath: "/images/logos/company-logo-20.png",
     },
+    {
+      imgPath: "/images/logos/company-logo-21.png",
+    },
+    {
+      imgPath: "/images/logos/company-logo-22.png",
+    },
   ];
   
   const socialImgs = [
