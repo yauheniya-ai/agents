@@ -63,7 +63,7 @@ const AppShowcase = () => {
                   <span style={{ color: 'var(--color-purple-100)' }}>AI Research Agent</span> delves into scholarly databases and institutional repositories to deliver rigorously cited, academically grounded responses to multifaceted inquiries. 
                 </h2>
                 <p className="text-white-50 md:text-xl">
-                  #python, langchain, #postgresql, #cloudinary, #streamlit
+                  #python, #streamlit, #langchain, #postgresql, #cloudinary
                 </p>
               </div>
             </GlowCard>
