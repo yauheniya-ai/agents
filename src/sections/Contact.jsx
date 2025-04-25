@@ -21,8 +21,18 @@ const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setLoading(true);
     setSuccess(null);
+  
+    if (!gdprAccepted) {
+      setSuccess({
+        type: "error",
+        message: "Please accept the GDPR privacy policy before submitting the form."
+      });
+      return;
+    }
+  
+    setLoading(true);
+  
     try {
       const response = await fetch("https://formspree.io/f/mdkgovyw", {
         method: "POST",
@@ -35,7 +45,7 @@ const Contact = () => {
       if (data.ok) {
         setSuccess({
           type: "success",
-          message: `Thank you, <span style="color:#52bcff">${form.name}</span>. We will get back at you within 24 hours via email: <span style="color:#52bcff">${form.email}</span>.`
+          message: `Thank you, <span style="color: var(--color-purple-100)">${form.name}</span>. We will get back at you within 24 hours via the provided email: <span style="color: var(--color-purple-100)">${form.email}</span>.`
         });
         setForm({ name: "", email: "", message: "" });
       } else {
@@ -137,17 +147,16 @@ const Contact = () => {
                       id="gdpr"
                       checked={gdprAccepted}
                       onChange={() => setGdprAccepted(!gdprAccepted)}
-                      className="flex-none mt-1 accent-[#52bcff] w-4 h-4"
-                      required
+                      className="flex-none mt-1 accent-purple-100 w-4 h-4"
                     />
-                    <label htmlFor="gdpr">
+                    <label htmlFor="gdpr" className="leading-relaxed text-[#FFFFFF]">
                       I agree to the processing of my data in accordance with the GDPR privacy policy.
                     </label>
                   </div>
                 </div>
 
 
-                <button type="submit" disabled={loading || !gdprAccepted}>
+                <button type="submit" disabled={loading}>
                   <div className="cta-button group">
                     <div className="bg-circle" />
                     <p className="text">
@@ -160,10 +169,9 @@ const Contact = () => {
                 </button>
                 {success && (
                   <div
-                    className={`text-sm px-4 py-3 rounded-lg ${
-                      success.type === "error" ? "bg-[#3a0a2a] text-[#ea2081]" : "bg-[#0a3a2a] text-white"
-                    }`}
-                    style={{ lineHeight: "1.5", textAlign: "left" }}
+                    className={`mt-4 p-4 rounded-lg text-center ${
+                      success.type === "error" ? "text-[#ea2081]" : "text-white"
+                    } bg-black-200`}
                     dangerouslySetInnerHTML={{ __html: success.message }}
                   />
                 )}
