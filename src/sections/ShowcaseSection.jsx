@@ -11,6 +11,8 @@ const AppShowcase = () => {
   const researchRef = useRef(null);
   const legalRef = useRef(null);
   const webScrapingRef = useRef(null);
+  const voiceRef = useRef(null);
+  const codingRef = useRef(null);
 
   useGSAP(() => {
     // Animation for the main section
@@ -66,7 +68,7 @@ const AppShowcase = () => {
               </div>
             </GlowCard>
 
-            <GlowCard card={{ review: 'AI Voice Agent' }} index={3}>
+            <GlowCard card={{ review: 'AI Voice Agent' }} index={3} ref={voiceRef}>
             <div className="image-wrapper" style={{ border: `10px solid var(--color-pink-100)` }}>
                 <img 
                   src="/images/Robot_project4.gif" 
@@ -97,7 +99,7 @@ const AppShowcase = () => {
               </h2>
             </GlowCard>
 
-            <GlowCard card={{ review: 'AI Web Scraping Agent' }} index={2} ref={webScrapingRef}>
+            <GlowCard card={{ review: 'AI WebScraping Agent' }} index={2} ref={webScrapingRef}>
               <div className="image-wrapper bg-[#52bcff]">
                 <img 
                   src="/images/Robot_project3.png" 
@@ -105,7 +107,19 @@ const AppShowcase = () => {
                 />
               </div>
               <h2>
-                <span style={{ color: 'var(--color-blue-10)' }}>AI Web Scraping Agent</span> methodically harvests and structures textual and visual content from web sources, presenting organized datasets with clear provenance documentation.
+                <span style={{ color: 'var(--color-blue-10)' }}>AI WebScraping Agent</span> methodically harvests and structures textual and visual content from web sources, presenting organized datasets with clear provenance documentation.
+              </h2>
+            </GlowCard>
+
+            <GlowCard card={{ review: 'AI Coding Agent' }} index={2} ref={codingRef}>
+              <div className="image-wrapper bg-[#8b76e9]">
+                <img 
+                  src="/images/Robot_project5.png" 
+                  alt="AI Coding Agent"                     
+                />
+              </div>
+              <h2>
+                <span style={{ color: 'var(--color-purple-100)' }}>AI Coding Agent</span> analyzes, debugs, and extends codebases, implementing fixes and features while maintaining documentation and version control.
               </h2>
             </GlowCard>
           </div>
