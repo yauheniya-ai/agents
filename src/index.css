@@ -25,9 +25,9 @@ section {
   --color-black-50: #1c1c21;
   --color-black-100: #0e0e10;
   --color-black-200: #282732;
-  --color-blue-10: #52bcff;
+  --color-blue-10: #e1effa;
   --color-blue-50: #839cb5;
-  --color-blue-100: #e1effa;
+  --color-blue-100: #52bcff;
   --color-pink-100: #ea2081;
   --color-purple-100: #8b76e9;
   --color-gold-100: #EEA705;
@@ -285,7 +285,7 @@ section {
     input,
     textarea {
       color: #000;
-      @apply w-full px-4 py-4 md:text-base text-sm placeholder:text-blue-50 bg-blue-100 rounded-md;
+      @apply w-full px-4 py-4 md:text-base text-sm placeholder:text-blue-50 bg-blue-10 rounded-md;
     }
 
     a {

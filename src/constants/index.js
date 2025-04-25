@@ -6,18 +6,18 @@ const navLinks = [
   ];
   
   const words = [
-    { text: "Coding", imgPath: "/images/data.svg" },
-    { text: "Creative", imgPath: "/images/designs.svg" },
-    { text: "Legal", imgPath: "/images/legal.svg" },
-    { text: "Research", imgPath: "/images/puzzle.svg" },
-    { text: "WebScraping", imgPath: "/images/web.svg" },
-    { text: "Voice", imgPath: "/images/voice.svg" },
-    { text: "Monitoring", imgPath: "/images/monitoring.svg" },
-    { text: "Planning", imgPath: "/images/planning.svg" },
-    { text: "Review", imgPath: "/images/review.svg" },
-    { text: "Finance", imgPath: "/images/finance.svg" },
-    { text: "Mapping", imgPath: "/images/drone.svg" },
-    { text: "Security", imgPath: "/images/security.svg" },
+    { text: "Coding", imgPath: "/images/agents/data.svg" },
+    { text: "Creative", imgPath: "/images/agents/designs.svg" },
+    { text: "Legal", imgPath: "/images/agents/legal.svg" },
+    { text: "Research", imgPath: "/images/agents/puzzle.svg" },
+    { text: "WebScraping", imgPath: "/images/agents/web.svg" },
+    { text: "Voice", imgPath: "/images/agents/voice.svg" },
+    { text: "Monitoring", imgPath: "/images/agents/monitoring.svg" },
+    { text: "Planning", imgPath: "/images/agents/planning.svg" },
+    { text: "Review", imgPath: "/images/agents/review.svg" },
+    { text: "Finance", imgPath: "/images/agents/finance.svg" },
+    { text: "Mapping", imgPath: "/images/agents/drone.svg" },
+    { text: "Security", imgPath: "/images/agents/security.svg" },
   ];
   
   

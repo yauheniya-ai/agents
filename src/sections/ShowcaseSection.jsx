@@ -98,19 +98,19 @@ const AppShowcase = () => {
                 <span style={{ color: 'var(--color-gold-100)' }}>AI Legal Agent</span> systematically maps statutory frameworks and regulatory provisions, curating precise legal excerpts relevant to specified jurisdictional queries.
               </h2>
               <p className="text-white-50 md:text-xl mt-4">
-                  #python, #langchain, #postgresql, #cloudinary, #streamlit
+                #python, #langchain, #postgresql, #cloudinary, #streamlit
               </p>
             </GlowCard>
 
             <GlowCard card={{ review: 'AI WebScraping Agent' }} index={2} ref={webScrapingRef}>
-              <div className="image-wrapper bg-[color:var(--color-blue-10)]">
+              <div className="image-wrapper bg-[color:var(--color-blue-100)]">
                 <img 
                   src="/images/Robot_project3.png" 
                   alt="AI Web Scraping Agent"                     
                 />
               </div>
               <h2>
-                <span style={{ color: 'var(--color-blue-10)' }}>AI WebScraping Agent</span> methodically harvests and structures textual and visual content from web sources, presenting organized datasets with clear provenance documentation.
+                <span style={{ color: 'var(--color-blue-100)' }}>AI WebScraping Agent</span> methodically harvests and structures textual and visual content from web sources, presenting organized datasets with clear provenance documentation.
               </h2>
               <p className="text-white-50 md:text-xl mt-4">
                   #python, #streamlit, #selenium, #langchain
