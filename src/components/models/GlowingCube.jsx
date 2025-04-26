@@ -28,7 +28,7 @@ const CubeEdges = () => {
           key={idx}
           points={[points[start], points[end]]}
           color="#8b76e9" // purple-100
-          lineWidth={2}
+          lineWidth={8}
         />
       ))}
     </>
