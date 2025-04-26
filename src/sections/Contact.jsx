@@ -140,7 +140,7 @@ const Contact = () => {
                   />
                 </div>
 
-                <div className="flex items-start text-sm mt-2">
+                <div className="flex items-start mt-2">
                   <div className="flex items-start space-x-3">
                     <input
                       type="checkbox"
@@ -149,12 +149,11 @@ const Contact = () => {
                       onChange={() => setGdprAccepted(!gdprAccepted)}
                       className="flex-none mt-1 accent-purple-100 w-4 h-4"
                     />
-                    <label htmlFor="gdpr" className="leading-relaxed text-[#FFFFFF]">
+                    <label htmlFor="gdpr" className="leading-relaxed text-white">
                       I agree to the processing of my data in accordance with the GDPR privacy policy.
                     </label>
                   </div>
                 </div>
-
 
                 <button type="submit" disabled={loading}>
                   <div className="cta-button group">
