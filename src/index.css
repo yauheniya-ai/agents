@@ -44,6 +44,18 @@ section {
 }
 
 @layer components {
+  .link-fancy {
+    @apply text-white-50 relative transition-colors duration-300 hover:text-white;
+  }
+
+  .link-fancy .underline {
+    @apply absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all duration-300;
+  }
+
+  .link-fancy:hover .underline {
+    @apply w-full;
+  }
+
   .padding-x {
     @apply px-5 md:px-10;
   }

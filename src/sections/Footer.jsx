@@ -4,23 +4,25 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-container">
-      <div className="flex flex-row justify-center sm:justify-start items-center gap-2">
+        <div className="flex flex-row justify-center sm:justify-start items-center gap-2">
           <a
             href="./legal_notice"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-white-50 hover:text-white hover:underline transition-colors duration-200"
+            className="link-fancy"
           >
-            Legal Notice
+            <span>Legal Notice</span>
+            <span className="underline" />
           </a>
           <span className="text-white-50">|</span>
           <a
             href="./privacy_policy"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-white-50 hover:text-white hover:underline transition-colors duration-200"
+            className="link-fancy"
           >
-            Privacy Policy
+            <span>Privacy Policy</span>
+            <span className="underline" />
           </a>
         </div>
         <div className="socials flex gap-4">
