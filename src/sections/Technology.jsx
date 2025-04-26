@@ -33,8 +33,8 @@ const Technology = () => (
         title="Technologies to Build and Deploy AI Agents"
       />
 
-      {/* Grid replacing the 3D model */}
-      <div className="w-full flex justify-center items-center my-16">
+      {/* Hover Grid Top */}
+      <div className="w-full flex justify-center items-center mt-32">
         <div className="relative w-full max-w-full px-4">
           <HoverGrid />
         </div>
@@ -44,10 +44,12 @@ const Technology = () => (
       <div className="relative">
         {/* Gradient Left */}
         <div className="gradient-edge" />
+        {/* Gradient Right */}
+        <div className="gradient-edge" />
 
         {/* Marquee */}
         <div className="marquee h-52">
-          <div className="marquee-box md:gap-12 gap-5">
+          <div className="marquee-box md:gap-12 gap-5 mt-16">
             {logoIconsList.map((icon, index) => (
               <LogoIcon key={`first-${index}`} icon={icon} />
             ))}
@@ -57,8 +59,14 @@ const Technology = () => (
           </div>
         </div>
 
-        {/* Gradient Right */}
-        <div className="gradient-edge" />
+
+
+        {/* Hover Grid Bottom */}
+        <div className="w-full flex justify-center items-center mt-16">
+          <div className="relative w-full max-w-full px-4">
+            <HoverGrid />
+          </div>
+        </div>
       </div>
     </div>
   </section>
