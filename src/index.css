@@ -210,7 +210,7 @@ section {
       @apply h-full flex flex-col gap-10 justify-between xl:w-[60%];
 
       .image-wrapper {
-        @apply xl:h-[80vh] md:h-[50vh] h-96 relative;
+        @apply xl:h-[70vh] md:h-[50vh] h-96 relative;
         /* Add outline styles here */
         border: 10px solid var(--color-purple-100);
         border-radius: 0.75rem; /* matches rounded-xl */
