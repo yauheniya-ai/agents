@@ -42,7 +42,10 @@ const Technology = () => (
 
       {/* Marquee + Gradient Edge */}
       <div className="relative">
+        {/* Gradient Left */}
         <div className="gradient-edge" />
+
+        {/* Marquee */}
         <div className="marquee h-52">
           <div className="marquee-box md:gap-12 gap-5">
             {logoIconsList.map((icon, index) => (
@@ -53,6 +56,9 @@ const Technology = () => (
             ))}
           </div>
         </div>
+
+        {/* Gradient Right */}
+        <div className="gradient-edge" />
       </div>
     </div>
   </section>

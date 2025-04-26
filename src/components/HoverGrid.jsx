@@ -2,7 +2,7 @@ import { useState, useRef, useEffect } from 'react';
 
 const HoverGrid = () => {
   const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
-  const [mousePosition, setMousePosition] = useState(null); // Start with null instead of {x: -1, y: -1}
+  const [mousePosition, setMousePosition] = useState(null); 
   const gridRef = useRef(null);
 
   const squareSize = 8;
