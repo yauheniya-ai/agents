@@ -1,10 +1,10 @@
 const navLinks = [
-    {
-      name: "Agents",
-      link: "#agents",
-    },
-  ];
-  
+  {
+    name: "Agents",
+    link: "#agents",
+  },
+];
+
 const words = [
   { text: "Coding", imgPath: "/images/agents/data.svg" },
   { text: "Creative", imgPath: "/images/agents/designs.svg" },
@@ -19,75 +19,30 @@ const words = [
   { text: "Mapping", imgPath: "/images/agents/drone.svg" },
   { text: "Security", imgPath: "/images/agents/security.svg" },
 ];
-  
-  
+
 const logoIconsList = [
-  {
-    imgPath: "/images/logos/company-logo-01.png",
-  },
-  {
-    imgPath: "/images/logos/company-logo-02.png",
-  },
-  {
-    imgPath: "/images/logos/company-logo-03.png",
-  },
-  {
-    imgPath: "/images/logos/company-logo-04.png",
-  },
-  {
-    imgPath: "/images/logos/company-logo-05.png",
-  },
-  {
-    imgPath: "/images/logos/company-logo-06.png",
-  },
-  {
-    imgPath: "/images/logos/company-logo-07.png",
-  },
-  {
-    imgPath: "/images/logos/company-logo-08.png",
-  },
-  {
-    imgPath: "/images/logos/company-logo-09.png",
-  },
-  {
-    imgPath: "/images/logos/company-logo-10.png",
-  },
-  {
-    imgPath: "/images/logos/company-logo-11.png",
-  },
-  {
-    imgPath: "/images/logos/company-logo-12.png",
-  },
-  {
-    imgPath: "/images/logos/company-logo-13.png",
-  },
-  {
-    imgPath: "/images/logos/company-logo-14.png",
-  },
-  {
-    imgPath: "/images/logos/company-logo-15.png",
-  },
-  {
-    imgPath: "/images/logos/company-logo-16.png",
-  },
-  {
-    imgPath: "/images/logos/company-logo-17.png",
-  },
-  {
-    imgPath: "/images/logos/company-logo-18.png",
-  },
-  {
-    imgPath: "/images/logos/company-logo-19.png",
-  },
-  {
-    imgPath: "/images/logos/company-logo-20.png",
-  },
-  {
-    imgPath: "/images/logos/company-logo-21.png",
-  },
-  {
-    imgPath: "/images/logos/company-logo-22.png",
-  },
+  { imgPath: "/images/logos/company-logo-01.png" },
+  { imgPath: "/images/logos/company-logo-02.png" },
+  { imgPath: "/images/logos/company-logo-03.png" },
+  { imgPath: "/images/logos/company-logo-04.png" },
+  { imgPath: "/images/logos/company-logo-05.png" },
+  { imgPath: "/images/logos/company-logo-06.png" },
+  { imgPath: "/images/logos/company-logo-07.png" },
+  { imgPath: "/images/logos/company-logo-08.png" },
+  { imgPath: "/images/logos/company-logo-09.png" },
+  { imgPath: "/images/logos/company-logo-10.png" },
+  { imgPath: "/images/logos/company-logo-11.png" },
+  { imgPath: "/images/logos/company-logo-12.png" },
+  { imgPath: "/images/logos/company-logo-13.png" },
+  { imgPath: "/images/logos/company-logo-14.png" },
+  { imgPath: "/images/logos/company-logo-15.png" },
+  { imgPath: "/images/logos/company-logo-16.png" },
+  { imgPath: "/images/logos/company-logo-17.png" },
+  { imgPath: "/images/logos/company-logo-18.png" },
+  { imgPath: "/images/logos/company-logo-19.png" },
+  { imgPath: "/images/logos/company-logo-20.png" },
+  { imgPath: "/images/logos/company-logo-21.png" },
+  { imgPath: "/images/logos/company-logo-22.png" },
 ];
 
 const firstColumnProjects = [
@@ -100,6 +55,7 @@ const firstColumnProjects = [
     techStack: "#python, #streamlit, #langchain, #postgresql, #cloudinary",
     image: "/images/Robot_project1.png",
     alt: "AI Research Agent",
+    githubUrl: "https://github.com/yauheniya-ai/research-agent",
   },
   {
     id: "voice",
@@ -111,6 +67,7 @@ const firstColumnProjects = [
     image: "/images/Robot_project4.gif",
     alt: "AI Voice Agent",
     border: true,
+    githubUrl: "https://github.com/yauheniya-ai/voice-agent",
   },
 ];
 
@@ -124,6 +81,7 @@ const secondColumnProjects = [
     techStack: "#python, #langchain, #postgresql, #cloudinary, #streamlit",
     image: "/images/Robot_project2.png",
     alt: "AI Legal Agent",
+    githubUrl: "https://github.com/yauheniya-ai/legal-agent",
   },
   {
     id: "webScraping",
@@ -134,6 +92,7 @@ const secondColumnProjects = [
     techStack: "#python, #streamlit, #selenium, #langchain",
     image: "/images/Robot_project3.png",
     alt: "AI Web Scraping Agent",
+    githubUrl: "https://github.com/yauheniya-ai/webscraping-agent",
   },
   {
     id: "coding",
@@ -144,10 +103,9 @@ const secondColumnProjects = [
     techStack: "#python, #ollama, #llamaindex, #llamaparse",
     image: "/images/Robot_project5.png",
     alt: "AI Coding Agent",
+    githubUrl: "https://github.com/yauheniya-ai/coding-agent",
   },
 ];
-
-
 
 const socialImgs = [
   {
@@ -172,16 +130,16 @@ const socialImgs = [
   },
   {
     name: "linkedin",
-    url: "linkedin.com/in/yauheniya-varabyova",
+    url: "https://linkedin.com/in/yauheniya-varabyova",
     imgPath: "/images/linkedin.svg",
   },
 ];
-  
+
 export {
   navLinks,
   words,
   logoIconsList,
   firstColumnProjects,
   secondColumnProjects,
-  socialImgs
+  socialImgs,
 };
