@@ -70,17 +70,9 @@ const Contact = () => {
         <TitleHeader
             sub={
               <span className="flex items-center gap-2">
-                <img 
-                  src="/public/images/robot-arm.svg" 
-                  width="24" 
-                  height="24" 
-                  alt="Robot arm"
-                  className="text-white transform scale-x-[-1]"
-                  style={{ transform: 'scaleX(+1)' }}
-                />
                 Let's automate!
                 <img 
-                  src="/public/images/robot-arm.svg" 
+                  src="/public/images/robotic_arm.svg" 
                   width="24" 
                   height="24" 
                   alt="Robot arm"
