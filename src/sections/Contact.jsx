@@ -94,7 +94,7 @@ const Contact = () => {
                 action="https://formspree.io/f/mdkgovyw"
               >
                 <div>
-                  <label htmlFor="name">Your name</label>
+                  <label htmlFor="name">Your Name</label>
                   <input
                     type="text"
                     id="name"
@@ -126,7 +126,7 @@ const Contact = () => {
                     name="message"
                     value={form.message}
                     onChange={handleChange}
-                    placeholder="How can I help you?"
+                    placeholder="What's your message?"
                     rows="5"
                     required
                   />
