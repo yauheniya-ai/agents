@@ -44,6 +44,34 @@ section {
 }
 
 @layer components {
+  .github-icon {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    z-index: 10;
+    width: 2.5rem; /* 10 units */
+    height: 2.5rem; /* 10 units */
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.3); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .github-icon:hover {
+    background-color: white;
+  }
+  
+  .github-icon img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1.25rem; /* 5 units */
+    height: 1.25rem; /* 5 units */
+  }
+
   .link-fancy {
     @apply text-white-50 relative transition-colors duration-300 hover:text-white;
   }
@@ -191,7 +219,7 @@ section {
         img {
           @apply w-full h-full object-cover rounded-xl absolute inset-0;
           /* Remove border-radius from img since container now handles it */
-          border-radius: 0.5rem;
+          border-radius: 0rem;
         }
       }
 

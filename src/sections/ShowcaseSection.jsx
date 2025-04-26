@@ -94,12 +94,7 @@ const AppShowcase = () => {
         href={cardData.githubUrl}
         target="_blank"
         rel="noopener noreferrer"
-        className="absolute z-10 w-10 h-10 rounded-full bg-white-50 flex items-center justify-center transition-colors duration-300 hover:bg-white"
-        style={{
-          top: "16px", 
-          right: "16px",
-          position: "absolute"
-        }}
+        className="github-icon"
         aria-label={`View ${cardData.title} on GitHub`}
       >
         <img
