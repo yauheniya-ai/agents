@@ -137,7 +137,7 @@ const AppShowcase = () => {
                         : { backgroundColor: cardData.color }
                     }
                   >
-                    <img src={cardData.image} alt={cardData.alt} />
+                    <img src={cardData.image} alt={cardData.alt}  />
                     {cardData.githubUrl && <GitHubIcon cardData={cardData} />}
                   </div>
                   <div className="text-content">
