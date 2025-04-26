@@ -1,7 +1,7 @@
 import { logoIconsList } from "../constants";
 import TitleHeader from "../components/TitleHeader";
 import GlowCard from "../components/GlowCard"
-import GlowingCube from "../components/models/GlowingCube";
+import GlowingPrism from "../components/models/GlowingPrism";
 
 const LogoIcon = ({ icon, index }) => {
   return (
@@ -36,7 +36,7 @@ const Technology = () => (
       {/* Insert your Cube here */}
       <div className="w-full flex justify-center items-center mt-32 my-16">
         <div className="relative w-full max-w-[300px] aspect-square">
-          <GlowingCube />
+          <GlowingPrism />
         </div>
       </div>
 
