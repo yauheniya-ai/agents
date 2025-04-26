@@ -46,7 +46,7 @@ const HoverGrid = () => {
 
   return (
     <div
-      className="w-full h-[480px] flex justify-center items-center relative overflow-hidden"
+      className="w-full h-[180px] flex justify-center items-center relative overflow-hidden"
       ref={gridRef}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
