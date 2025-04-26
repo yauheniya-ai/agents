@@ -87,6 +87,36 @@ const AppShowcase = () => {
     });
   }, []); // Empty dependency array ensures this effect runs only once when the component mounts
 
+  // Separate GitHub icon component with custom positioning based on whether the card has a border
+  const GitHubIcon = ({ cardData }) => {
+    return (
+      <a
+        href={cardData.githubUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="absolute z-10 w-10 h-10 rounded-full bg-white-50 flex items-center justify-center transition-colors duration-300 hover:bg-white"
+        style={{
+          top: "16px", 
+          right: "16px",
+          position: "absolute"
+        }}
+        aria-label={`View ${cardData.title} on GitHub`}
+      >
+        <img
+          src="/images/github.svg"
+          alt="GitHub icon"
+          className="w-5 h-5"
+          style={{ 
+            position: "absolute",
+            top: "50%",
+            left: "50%",
+            transform: "translate(-50%, -50%)"
+          }}
+        />
+      </a>
+    );
+  };
+
   return (
     <div id="agents" ref={sectionRef} className="app-showcase">
       <div className="w-full">
@@ -100,7 +130,7 @@ const AppShowcase = () => {
                   index={index}
                 >
                   <div
-                    className="image-wrapper"
+                    className="image-wrapper relative"
                     style={
                       cardData.border
                         ? { border: `10px solid ${cardData.color}` }
@@ -108,6 +138,7 @@ const AppShowcase = () => {
                     }
                   >
                     <img src={cardData.image} alt={cardData.alt} />
+                    {cardData.githubUrl && <GitHubIcon cardData={cardData} />}
                   </div>
                   <div className="text-content">
                     <h2>
@@ -130,10 +161,11 @@ const AppShowcase = () => {
                   index={index + firstColumnProjects.length}
                 >
                   <div
-                    className="image-wrapper"
+                    className="image-wrapper relative"
                     style={{ backgroundColor: cardData.color }}
                   >
                     <img src={cardData.image} alt={cardData.alt} />
+                    {cardData.githubUrl && <GitHubIcon cardData={cardData} />}
                   </div>
                   <h2>
                     <span style={{ color: cardData.color }}>{cardData.title}</span>{" "}
