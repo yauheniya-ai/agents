@@ -49,7 +49,7 @@ const Technology = () => (
 
         {/* Marquee */}
         <div className="marquee h-52">
-          <div className="marquee-box md:gap-12 gap-5 mt-16">
+          <div className="marquee-box md:gap-12 gap-5 mt-8">
             {logoIconsList.map((icon, index) => (
               <LogoIcon key={`first-${index}`} icon={icon} />
             ))}
@@ -62,7 +62,7 @@ const Technology = () => (
 
 
         {/* Hover Grid Bottom */}
-        <div className="w-full flex justify-center items-center mt-16">
+        <div className="w-full flex justify-center items-center mt-8">
           <div className="relative w-full max-w-full px-4">
             <HoverGrid />
           </div>
