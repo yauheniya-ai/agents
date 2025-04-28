@@ -47,6 +47,10 @@ const logoIconsList = [
   { imgPath: "/images/logos/company-logo-20.png" },
   { imgPath: "/images/logos/company-logo-21.png" },
   { imgPath: "/images/logos/company-logo-22.png" },
+  { imgPath: "/images/logos/company-logo-23.png" },
+  { imgPath: "/images/logos/company-logo-24.png" },
+  { imgPath: "/images/logos/company-logo-25.png" },
+  { imgPath: "/images/logos/company-logo-26.png" },
 ];
 
 const firstColumnProjects = [
