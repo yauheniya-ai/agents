@@ -1,7 +1,8 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 const BrainSvg = () => {
   const objectRef = useRef(null);
+  const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
     const handleLoad = () => {
@@ -9,12 +10,16 @@ const BrainSvg = () => {
       const svg = svgDoc.querySelector('svg');
       const squares = Array.from(svg.querySelectorAll('rect'));
 
+      // Initially hide the entire SVG
+      objectRef.current.style.opacity = '0';
+
       const shuffle = (arr) => {
-        for (let i = arr.length - 1; i > 0; i--) {
+        const newArr = [...arr];
+        for (let i = newArr.length - 1; i > 0; i--) {
           const j = Math.floor(Math.random() * (i + 1));
-          [arr[i], arr[j]] = [arr[j], arr[i]];
+          [newArr[i], newArr[j]] = [newArr[j], newArr[i]];
         }
-        return arr;
+        return newArr;
       };
 
       const updateSquares = () => {
@@ -48,14 +53,27 @@ const BrainSvg = () => {
         });
       };
 
+      // Run animation first without showing the SVG
       updateSquares();
+      
+      // Start the interval
       const interval = setInterval(updateSquares, 500);
+      
+      // After a brief delay, show the SVG with animation already running
+      setTimeout(() => {
+        objectRef.current.style.transition = 'opacity 1s ease-in-out';
+        objectRef.current.style.opacity = '0.2'; // Match the opacity-20 class
+        setIsLoaded(true);
+      }, 500);
+
       return () => clearInterval(interval);
     };
 
     const obj = objectRef.current;
-    obj.addEventListener('load', handleLoad);
-    return () => obj.removeEventListener('load', handleLoad);
+    if (obj) {
+      obj.addEventListener('load', handleLoad);
+      return () => obj.removeEventListener('load', handleLoad);
+    }
   }, []);
 
   return (
@@ -63,8 +81,12 @@ const BrainSvg = () => {
       ref={objectRef}
       type="image/svg+xml"
       data="/images/data_bg.svg"
-      className="w-[1000px] h-auto opacity-20"
-      style={{ transform: 'translate(-20px, -20px)' }}
+      className="w-[1000px] h-auto"
+      style={{ 
+        transform: 'translate(-20px, -20px)',
+        opacity: 0, // Start completely hidden
+        transition: 'opacity 1s ease-in-out'
+      }}
     />
   );
 };
