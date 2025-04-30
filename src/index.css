@@ -419,6 +419,22 @@ section {
   }
 }
 
+.cls-1 {
+  fill: #8b76e9; /* Pink: most squares */
+}
+
+.cls-2 {
+  fill: #52bcff; /* Pink: ca. 20 squares */
+}
+
+.cls-3 {
+  fill: #ea2081; /* Pink: ca. 20 squares */
+}
+
+.cls-4 {
+  fill: #ffffff; /* White: ca. 40 squares in total */
+}
+
 /* Hero Text slider ends */
 
 .gradient-line {

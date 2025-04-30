@@ -4,6 +4,7 @@ import { useRef } from "react";
 import Button from "../components/Button";
 import { words } from "../constants";
 import HeroExperience from "../components/models/hero_models/HeroExperience";
+import BrainSvg from '../components/BrainSvg';
 
 const Hero = () => {
   const arrowRef = useRef(null);
@@ -51,12 +52,9 @@ const Hero = () => {
     <section id="hero" className="relative overflow-hidden h-screen">
       {/* Background image */}
       <div className="absolute top-0 left-0 z-10">
-        <img 
-          src="/images/bg.png" 
-          alt=""
-          className="opacity-18"
-        />
+        <BrainSvg />
       </div>
+
 
       <div className="hero-layout h-full">
         {/* LEFT: Hero Content */}
