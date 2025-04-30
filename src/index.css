@@ -24,7 +24,6 @@ section {
   --color-white-50: #e6e2fe;
   --color-black-50: #1c1c21;
   --color-black-100: #0e0e10;
-
   --color-black-200: #272827;
   --color-blue-10: #e1effa;
   --color-blue-50: #839cb5;
@@ -374,7 +373,7 @@ section {
   display: flex;
   flex-direction: column;
   animation: wordSlider 21s infinite cubic-bezier(0.9, 0.01, 0.3, 0.99);
-  animation-delay: 6s;
+  animation-delay: 5s;
 }
 
 @keyframes wordSlider {
