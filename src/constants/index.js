@@ -10,18 +10,18 @@ const navLinks = [
 ];
 
 const words = [
-  { text: "Coding", imgPath: "./images/agents/data.svg" },
-  { text: "Creative", imgPath: "./images/agents/designs.svg" },
-  { text: "Legal", imgPath: "./images/agents/legal.svg" },
-  { text: "Research", imgPath: "./images/agents/puzzle.svg" },
-  { text: "WebScraping", imgPath: "./images/agents/web.svg" },
-  { text: "Voice", imgPath: "./images/agents/voice.svg" },
-  { text: "Monitoring", imgPath: "./images/agents/monitoring.svg" },
-  { text: "Planning", imgPath: "./images/agents/planning.svg" },
-  { text: "Review", imgPath: "./images/agents/review.svg" },
-  { text: "Finance", imgPath: "./images/agents/finance.svg" },
-  { text: "Mapping", imgPath: "./images/agents/drone.svg" },
-  { text: "Security", imgPath: "./images/agents/security.svg" },
+  { text: "Coding", imgPath: `${import.meta.env.BASE_URL}images/agents/data.svg` },
+  { text: "Creative", imgPath: `${import.meta.env.BASE_URL}images/agents/designs.svg` },
+  { text: "Legal", imgPath: `${import.meta.env.BASE_URL}images/agents/legal.svg` },
+  { text: "Research", imgPath: `${import.meta.env.BASE_URL}images/agents/puzzle.svg` },
+  { text: "WebScraping", imgPath: `${import.meta.env.BASE_URL}images/agents/web.svg` },
+  { text: "Voice", imgPath: `${import.meta.env.BASE_URL}images/agents/voice.svg` },
+  { text: "Monitoring", imgPath: `${import.meta.env.BASE_URL}images/agents/monitoring.svg` },
+  { text: "Planning", imgPath: `${import.meta.env.BASE_URL}images/agents/planning.svg` },
+  { text: "Review", imgPath: `${import.meta.env.BASE_URL}images/agents/review.svg` },
+  { text: "Finance", imgPath: `${import.meta.env.BASE_URL}images/agents/finance.svg` },
+  { text: "Mapping", imgPath: `${import.meta.env.BASE_URL}images/agents/drone.svg` },
+  { text: "Security", imgPath: `${import.meta.env.BASE_URL}images/agents/security.svg` },
 ];
 
 const logoIconsList = [
