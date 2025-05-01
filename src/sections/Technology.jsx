@@ -19,11 +19,11 @@ const Technology = () => (
       <TitleHeader
         sub={
           <span className="flex items-center gap-2">
-            <img 
-              src="/public/images/engineering.svg" 
+            <img
+              src={`${import.meta.env.BASE_URL}images/engineering.svg`} 
               width="24" 
               height="24" 
-              alt="Robot arm"
+              alt="TechStack"
               className="text-white transform scale-x-[-1]"
               style={{ transform: 'scaleX(+1)' }}
             />

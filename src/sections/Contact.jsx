@@ -72,7 +72,7 @@ const Contact = () => {
               <span className="flex items-center gap-2">
                 Let's automate!
                 <img 
-                  src="/public/images/robotic_arm.svg" 
+                  src={`${import.meta.env.BASE_URL}images/robotic_arm.svg`}
                   width="24" 
                   height="24" 
                   alt="Robot arm"

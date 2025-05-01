@@ -53,7 +53,7 @@ const logoIconsList = [
   { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_vercel.png` },
   { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_render.png` },
   { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_docker.png` },
-  { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_travily.png` },
+  { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_tavily.png` },
 ];
 
 const firstColumnProjects = [
