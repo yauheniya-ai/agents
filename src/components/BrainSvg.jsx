@@ -80,7 +80,7 @@ const BrainSvg = () => {
     <object
       ref={objectRef}
       type="image/svg+xml"
-      data="/images/data_bg.svg"
+      data={`${import.meta.env.BASE_URL}images/data_bg.svg`}
       className="w-[1000px] h-auto"
       style={{ 
         transform: 'translate(-20px, -20px)',
