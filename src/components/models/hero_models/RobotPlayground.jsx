@@ -375,4 +375,4 @@ export function Model(props) {
   )
 }
 
-useGLTF.preload('/models/robot_playground.glb')
+useGLTF.preload(getModelPath('robot_playground.glb'))

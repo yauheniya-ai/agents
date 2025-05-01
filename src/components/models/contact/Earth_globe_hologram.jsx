@@ -72,4 +72,4 @@ export function EarthGlobeHologram(props) {
   )
 }
 
-useGLTF.preload('/models/earth_globe_hologram_2mb_looping_animation.glb')
+useGLTF.preload(getModelPath('earth_globe_hologram_2mb_looping_animation.glb'))
