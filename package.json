@@ -9,7 +9,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeploy": "npm run copy-readme && npm run build",
+    "predeploy": "npm run build && npm run copy-readme",
     "deploy": "gh-pages -d dist",
     "copy-readme": "cp README.md dist/README.md"
   },
