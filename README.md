@@ -1,7 +1,10 @@
 # AI Agents
 
-This portfolio showcases different AI agents — from research and legal analysis to voice interaction, coding assistance, and web scraping — each designed for specialized tasks using cutting-edge technologies.
+This portfolio showcases different AI agents — each designed for specialized tasks using cutting-edge technologies.
 
-Visit my GitHub: [yauheniya-ai](https://www.github.com/yauheniya-ai)
+### Screenshot
 
+![AI Agents Portfolio Screenshot](Screenshot.png)
 
+### Deployment Link
+You can view the live version of this portfolio here: [AI Agents Portfolio](https://yauheniya-ai.github.io/agents)
