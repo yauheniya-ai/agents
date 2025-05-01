@@ -112,6 +112,33 @@ const AppShowcase = () => {
     );
   };
 
+  // New component for Tenor attribution
+  const TenorAttribution = () => {
+    return (
+      <div 
+        className="tenor-attribution"
+        style={{
+          position: "absolute",
+          bottom: "8%",
+          right: "20px",
+          width: "20%",
+          height: "auto",
+          zIndex: 10,
+          pointerEvents: "none"
+        }}
+      >
+        <img 
+          src={`${import.meta.env.BASE_URL}images/via_tenor.svg`}
+          alt="via Tenor"
+          style={{
+            width: "100%",
+            height: "auto"
+          }}
+        />
+      </div>
+    );
+  };
+
   return (
     <div id="agents" ref={sectionRef} className="app-showcase">
       <div className="w-full">
@@ -132,7 +159,9 @@ const AppShowcase = () => {
                         : { backgroundColor: cardData.color }
                     }
                   >
-                    <img src={cardData.image} alt={cardData.alt}  />
+                    <img src={cardData.image} alt={cardData.alt} />
+                    {/* Add Tenor attribution only for the Voice Agent project */}
+                    {cardData.id === "voice" && <TenorAttribution />}
                     {cardData.githubUrl && <GitHubIcon cardData={cardData} />}
                   </div>
                   <div className="text-content">
