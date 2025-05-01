@@ -1,10 +1,11 @@
 import React, { useEffect, useMemo } from 'react'
 import { useGLTF, useAnimations } from '@react-three/drei'
 import * as THREE from 'three'
+import { getModelPath } from '@utils/getModelPath';
 
 export function EarthGlobeHologram(props) {
   const group = React.useRef()
-  const { nodes, materials, animations } = useGLTF('/models/earth_globe_hologram_2mb_looping_animation.glb')
+  const { nodes, materials, animations } = useGLTF(getModelPath('earth_globe_hologram_2mb_looping_animation.glb'))
   const { actions } = useAnimations(animations, group)
 
   // Create modified materials with the new color

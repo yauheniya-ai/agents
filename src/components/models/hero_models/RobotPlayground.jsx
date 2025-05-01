@@ -12,10 +12,11 @@ import { useGraph } from '@react-three/fiber'
 import { useGLTF, useAnimations } from '@react-three/drei'
 import { SkeletonUtils } from 'three-stdlib'
 import * as THREE from 'three'
+import { getModelPath } from '@utils/getModelPath';
 
 export function Model(props) {
   const group = React.useRef()
-  const { scene, animations } = useGLTF('/models/robot_playground.glb')
+  const { scene, animations } = useGLTF(getModelPath('robot_playground.glb'))
   const clone = React.useMemo(() => SkeletonUtils.clone(scene), [scene])
   const { nodes, materials } = useGraph(clone)
   const { actions, names } = useAnimations(animations, group)
