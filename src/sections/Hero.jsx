@@ -5,6 +5,7 @@ import Button from "../components/Button";
 import { words } from "../constants";
 import HeroExperience from "../components/models/hero_models/HeroExperience";
 import BrainSvg from '../components/BrainSvg';
+import { getAnchorHref } from "../utils/getAnchorHref";
 
 const Hero = () => {
   const arrowRef = useRef(null);
@@ -105,10 +106,13 @@ const Hero = () => {
 
       {/* Centered animated arrow */}
       <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-20">
-        <Button 
-          id="agents"
-          ref={arrowRef}
-        />
+      <Button 
+        id="agents"
+        ref={arrowRef}
+        as="a"
+        href={getAnchorHref('agents')}
+        aria-label="Scroll to next section"
+      />
       </div>
     </section>
   );

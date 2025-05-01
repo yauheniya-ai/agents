@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-
 import { navLinks } from "../constants";
+import { getAnchorHref } from "../utils/getAnchorHref";
 
 const NavBar = () => {
   // track if the user has scrolled down the page
@@ -25,7 +25,7 @@ const NavBar = () => {
   return (
     <header className={`navbar ${scrolled ? "scrolled" : "not-scrolled"}`}>
       <div className="inner">
-        <a href="#hero" className="logo">
+        <a href={getAnchorHref("hero")} className="logo">
           Yauheniya.AI
         </a>
 
@@ -33,7 +33,7 @@ const NavBar = () => {
           <ul>
             {navLinks.map(({ link, name }) => (
               <li key={name} className="group">
-                <a href={link}>
+                <a href={getAnchorHref(link.replace("#", ""))}>
                   <span>{name}</span>
                   <span className="underline" />
                 </a>
@@ -42,7 +42,7 @@ const NavBar = () => {
           </ul>
         </nav>
 
-        <a href="#contact" className="contact-btn group">
+        <a href={getAnchorHref("contact")} className="contact-btn group">
           <div className="inner">
             <span>Contact</span>
           </div>

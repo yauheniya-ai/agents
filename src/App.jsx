@@ -7,6 +7,7 @@ import Contact from "./sections/Contact";
 import Footer from "./sections/Footer";
 import Legal from "./pages/Legal";
 import Privacy from "./pages/Privacy";
+import ScrollToHash from "./components/ScrollToHash"; // Import ScrollToHash
 
 const Home = () => (
   <>
@@ -20,6 +21,7 @@ const Home = () => (
 const App = () => (
   <>
     <Navbar />
+    <ScrollToHash /> 
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/legal" element={<Legal />} />
