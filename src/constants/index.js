@@ -129,6 +129,11 @@ const socialImgs = [
     url: "https://medium.com/@yauheniya.ai",
     imgPath: "/images/medium.svg",
   },
+  {
+    name: "orcid",
+    url: "https://orcid.org/0000-0002-7193-1238",
+    imgPath: "/images/orcid.svg",
+  },
 ];
 
 export {

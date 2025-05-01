@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { socialImgs } from "../constants";
 
 const Footer = () => {
@@ -5,26 +6,17 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-container">
         <div className="flex flex-row justify-center sm:justify-start items-center gap-2">
-          <a
-            href="./legal_notice"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="link-fancy"
-          >
-            <span>Legal Notice</span>
+          <Link to="/legal" className="link-fancy">
+            <span>Legal</span>
             <span className="underline" />
-          </a>
+          </Link>
           <span className="text-white-50">|</span>
-          <a
-            href="./privacy_policy"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="link-fancy"
-          >
-            <span>Privacy Policy</span>
+          <Link to="/privacy" className="link-fancy">
+            <span>Privacy</span>
             <span className="underline" />
-          </a>
+          </Link>
         </div>
+
         <div className="socials flex gap-4">
           {socialImgs.map((socialImg, index) => (
             <a
@@ -42,6 +34,7 @@ const Footer = () => {
             </a>
           ))}
         </div>
+
         <div className="flex flex-col justify-center">
           <p className="text-center md:text-end">
             <span className="font-semibold">© {new Date().getFullYear()} Yauheniya.AI</span> | All rights reserved.

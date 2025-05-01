@@ -83,6 +83,15 @@ section {
     @apply w-full;
   }
 
+  .list-diamond li {
+    @apply relative pl-6 text-white-50;
+  }
+  
+  .list-diamond li::before {
+    content: "";
+    @apply absolute left-0 top-[0.6em] w-2 h-2 bg-white-50 rotate-45;
+  }
+
   .padding-x {
     @apply px-5 md:px-10;
   }
