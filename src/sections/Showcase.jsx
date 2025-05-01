@@ -98,8 +98,8 @@ const AppShowcase = () => {
         aria-label={`View ${cardData.title} on GitHub`}
       >
         <img
-          src="/images/github.svg"
-          alt="GitHub icon"
+          src={`${import.meta.env.BASE_URL}images/github.svg`}
+          alt="GitHub"
           className="w-5 h-5"
           style={{ 
             position: "absolute",
