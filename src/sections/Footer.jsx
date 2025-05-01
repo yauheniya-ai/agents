@@ -4,9 +4,22 @@ import { socialImgs } from "../constants";
 const Footer = () => {
   return (
     <footer className="footer">
-      <div className="footer-container flex flex-col gap-3 sm:flex-row sm:justify-between sm:items-center">
+      <div className="footer-container flex flex-col gap-3 sm:gap-0 sm:grid sm:grid-cols-3 sm:items-center">
         
-        {/* Social Icons - appear first on mobile */}
+        {/* Legal & Privacy (left on desktop, middle on mobile) */}
+        <div className="order-2 sm:order-none flex justify-center sm:justify-start items-center gap-2">
+          <Link to="/legal" className="link-fancy">
+            <span>Legal</span>
+            <span className="underline" />
+          </Link>
+          <span className="text-white-50">|</span>
+          <Link to="/privacy" className="link-fancy">
+            <span>Privacy</span>
+            <span className="underline" />
+          </Link>
+        </div>
+
+        {/* Social icons (top on mobile, center on desktop) */}
         <div className="order-1 sm:order-none socials flex justify-center gap-4">
           {socialImgs.map((socialImg, index) => (
             <a
@@ -25,20 +38,7 @@ const Footer = () => {
           ))}
         </div>
 
-        {/* Legal and Privacy Links - appear second on mobile */}
-        <div className="order-2 sm:order-none flex justify-center sm:justify-start items-center gap-2">
-          <Link to="/legal" className="link-fancy">
-            <span>Legal</span>
-            <span className="underline" />
-          </Link>
-          <span className="text-white-50">|</span>
-          <Link to="/privacy" className="link-fancy">
-            <span>Privacy</span>
-            <span className="underline" />
-          </Link>
-        </div>
-
-        {/* Signature - appears last on mobile */}
+        {/* Signature (bottom on mobile, right on desktop) */}
         <div className="order-3 sm:order-none flex justify-center sm:justify-end">
           <p className="text-center sm:text-end">
             <span className="font-semibold">© {new Date().getFullYear()} Yauheniya.AI</span> | All rights reserved.
