@@ -62,7 +62,7 @@ const BrainSvg = () => {
       // After a brief delay, show the SVG with animation already running
       setTimeout(() => {
         objectRef.current.style.transition = 'opacity 1s ease-in-out';
-        objectRef.current.style.opacity = '0.2'; // Match the opacity-20 class
+        objectRef.current.style.opacity = '0.3'; 
         setIsLoaded(true);
       }, 500);
 
