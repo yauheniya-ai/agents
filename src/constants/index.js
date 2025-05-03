@@ -52,8 +52,18 @@ const logoIconsList = [
   { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_streamlit.png` },
   { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_vercel.png` },
   { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_render.png` },
+  { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_huggingface.png` },
   { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_docker.png` },
   { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_tavily.png` },
+  { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_groq.png` },
+  { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_ollama.png` },
+  { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_claude.png` },
+  { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_openai.png` },
+  { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_deepseek.png` },
+  { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_arxiv.png` },
+  { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_semanticscholar.png` },
+  { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_crossref.png` },
+  { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_openalex.png` },
 ];
 
 const firstColumnProjects = [
