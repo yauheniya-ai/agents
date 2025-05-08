@@ -13,7 +13,7 @@ const words = [
   { text: "Coding", imgPath: `${import.meta.env.BASE_URL}images/agents/data.svg` },
   { text: "Creative", imgPath: `${import.meta.env.BASE_URL}images/agents/designs.svg` },
   { text: "Legal", imgPath: `${import.meta.env.BASE_URL}images/agents/legal.svg` },
-  { text: "Research", imgPath: `${import.meta.env.BASE_URL}images/agents/puzzle.svg` },
+  { text: "Research", imgPath: `${import.meta.env.BASE_URL}images/agents/neuron.svg` },
   { text: "WebScraping", imgPath: `${import.meta.env.BASE_URL}images/agents/web.svg` },
   { text: "Voice", imgPath: `${import.meta.env.BASE_URL}images/agents/voice.svg` },
   { text: "Monitoring", imgPath: `${import.meta.env.BASE_URL}images/agents/monitoring.svg` },
