@@ -76,7 +76,7 @@ const firstColumnProjects = [
     color: "var(--color-purple-100)",
     description:
       "delves into scholarly databases and institutional repositories to deliver rigorously cited, academically grounded responses to multifaceted inquiries.",
-    techStack: "#python, #streamlit, #langchain, #postgresql, #cloudinary",
+    techStack: "#langchain, #vertexai, #chroma, #semanticscholar, #arxiv, #crossref, #openalex, #streamlit",
     image: `${import.meta.env.BASE_URL}images/Robot_project1.png`,
     alt: "AI Research Agent",
     githubUrl: "https://github.com/yauheniya-ai/research-agent",
