@@ -76,7 +76,7 @@ const firstColumnProjects = [
     color: "var(--color-purple-100)",
     description:
       "delves into scholarly databases and institutional repositories to deliver rigorously cited, academically grounded responses to multifaceted inquiries.",
-    techStack: "#langchain, #vertexai, #chroma, #semanticscholar, #arxiv, #crossref, #openalex, #streamlit",
+    techStack: "#python, #langchain, #langgraph, #google-gemini, #chromadb, #semanticscholar, #arxiv, #crossref, #openalex, #streamlit",
     image: `${import.meta.env.BASE_URL}images/Robot_project1.png`,
     alt: "AI Research Agent",
     githubUrl: "https://github.com/yauheniya-ai/research-agent",
@@ -87,7 +87,7 @@ const firstColumnProjects = [
     color: "var(--color-pink-100)",
     description:
       "leverages advanced voice synthesis and natural language processing to deliver real-time, personalized, and context-aware conversations.",
-    techStack: "#vapi, #python, #langchain, #postgresql, #streamlit",
+    techStack: "#vapi, #python, #langchain, #langgraph, #postgresql, #streamlit",
     image: `${import.meta.env.BASE_URL}images/Robot_project4.gif`,
     alt: "AI Voice Agent",
     border: true,
@@ -102,7 +102,7 @@ const secondColumnProjects = [
     color: "var(--color-gold-100)",
     description:
       "systematically maps statutory frameworks and regulatory provisions, curating precise legal excerpts relevant to specified jurisdictional queries.",
-    techStack: "#python, #langchain, #postgresql, #cloudinary, #streamlit",
+    techStack: "#python, #langchain, #langgraph, #chromadb, #google-gemini, #tavily",
     image: `${import.meta.env.BASE_URL}images/Robot_project2.png`,
     alt: "AI Legal Agent",
     githubUrl: "https://github.com/yauheniya-ai/legal-agent",
@@ -113,7 +113,7 @@ const secondColumnProjects = [
     color: "var(--color-blue-100)",
     description:
       "methodically harvests and structures textual and visual content from web sources, presenting organized datasets with clear provenance documentation.",
-    techStack: "#python, #streamlit, #selenium, #langchain",
+    techStack: "#python, #streamlit, #langchain, #crawl4ai",
     image: `${import.meta.env.BASE_URL}images/Robot_project3.png`,
     alt: "AI Web Scraping Agent",
     githubUrl: "https://github.com/yauheniya-ai/webscraping-agent",
@@ -124,7 +124,7 @@ const secondColumnProjects = [
     color: "var(--color-purple-100)",
     description:
       "analyzes, debugs, and extends codebases, implementing fixes and features while maintaining documentation and version control.",
-    techStack: "#python, #ollama, #llamaindex, #llamaparse",
+    techStack: "#python, #langchain, #langgraph, #chromadb, #google-gemini",
     image: `${import.meta.env.BASE_URL}images/Robot_project5.png`,
     alt: "AI Coding Agent",
     githubUrl: "https://github.com/yauheniya-ai/coding-agent",
