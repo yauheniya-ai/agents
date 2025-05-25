@@ -23,7 +23,10 @@ export default function Legal() {
           <p className="mt-4">
             I am responsible for the content of this site according to § 5 TMG.
           </p>
-          <p className="mt-2">
+          <p className="mt-4">
+            For inquiries, please use the contact form provided on this website.
+          </p>          
+          <p className="mt-4">
             The site is hosted on GitHub Pages.
           </p>
         </div>
