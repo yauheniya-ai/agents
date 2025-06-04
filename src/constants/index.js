@@ -127,7 +127,7 @@ const secondColumnProjects = [
     techStack: "#python, #langchain, #astradb, #openai, #github",
     image: `${import.meta.env.BASE_URL}images/Robot_project5.png`,
     alt: "AI Coding Agent",
-    githubUrl: "https://github.com/yauheniya-ai/coding-agent",
+    githubUrl: "https://github.com/yauheniya-ai/github-agent",
   },
 ];
 
