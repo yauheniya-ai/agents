@@ -123,8 +123,8 @@ const secondColumnProjects = [
     title: "AI Coding Agent",
     color: "var(--color-purple-100)",
     description:
-      "analyzes, debugs, and extends codebases, implementing fixes and features while maintaining documentation and version control.",
-    techStack: "#python, #langchain, #langgraph, #chromadb, #google-gemini",
+      "currently analyzes GitHub issues with natural language queries, designed for future extension to full codebase analysis, debugging, and automated development tasks.",
+    techStack: "#python, #langchain, #astradb, #openai, #github",
     image: `${import.meta.env.BASE_URL}images/Robot_project5.png`,
     alt: "AI Coding Agent",
     githubUrl: "https://github.com/yauheniya-ai/coding-agent",
