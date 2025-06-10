@@ -102,10 +102,10 @@ const secondColumnProjects = [
     color: "var(--color-gold-100)",
     description:
       "curates precise legal excerpts relevant to specified jurisdictional queries.",
-    techStack: "#python, #langchain, #langgraph, #google-gemini",
+    techStack: "#python, #langchain, #faiss, #langgraph, #google-gemini",
     image: `${import.meta.env.BASE_URL}images/Robot_project2.png`,
     alt: "AI Legal Agent",
-    githubUrl: "https://github.com/yauheniya-ai/langchain-rag",
+    githubUrl: "https://github.com/yauheniya-ai/legal-agent",
   },
   {
     id: "webScraping",
