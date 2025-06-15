@@ -86,8 +86,8 @@ const firstColumnProjects = [
     title: "AI Voice Agent",
     color: "var(--color-pink-100)",
     description:
-      "leverages advanced voice synthesis and natural language processing to deliver real-time, personalized, and context-aware conversations.",
-    techStack: "#vapi, #python, #langchain, #langgraph, #postgresql, #streamlit",
+      "that combines speech recognition, AI language processing, and high-quality text-to-speech for natural voice conversations.",
+    techStack: "#python, #livekit, #elevenlabs, #silero, #openai",
     image: `${import.meta.env.BASE_URL}images/Robot_project4.gif`,
     alt: "AI Voice Agent",
     border: true,
