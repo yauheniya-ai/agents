@@ -36,6 +36,7 @@ const logoIconsList = [
   { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_llamaindex.png` },
   { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_langflow.png` },
   { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_vapi.png` },
+  { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_elevenlabs.png` },
   { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_selenium.png` },
   { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_plotly.png` },
   { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_matplotlib.png` },
@@ -56,9 +57,9 @@ const logoIconsList = [
   { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_huggingface.png` },
   { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_docker.png` },
   { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_tavily.png` },
+  { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_duckduckgo.png` },
   { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_groq.png` },
   { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_ollama.png` },
-  { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_vertexai.png` },
   { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_gemini.png` },  
   { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_claude.png` },
   { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_openai.png` },
@@ -67,6 +68,7 @@ const logoIconsList = [
   { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_semanticscholar.png` },
   { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_crossref.png` },
   { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_openalex.png` },
+  { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_wikipedia.png` },
 ];
 
 const firstColumnProjects = [
