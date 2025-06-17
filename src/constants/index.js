@@ -36,6 +36,7 @@ const logoIconsList = [
   { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_llamaindex.png` },
   { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_langflow.png` },
   { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_vapi.png` },
+  { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_livekit.png` },
   { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_elevenlabs.png` },
   { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_selenium.png` },
   { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_playwright.png` },
