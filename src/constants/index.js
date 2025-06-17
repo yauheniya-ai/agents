@@ -38,6 +38,7 @@ const logoIconsList = [
   { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_vapi.png` },
   { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_elevenlabs.png` },
   { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_selenium.png` },
+  { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_playwright.png` },
   { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_plotly.png` },
   { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_matplotlib.png` },
   { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_seaborn.png` },
@@ -114,8 +115,8 @@ const secondColumnProjects = [
     title: "AI WebScraping Agent",
     color: "var(--color-blue-100)",
     description:
-      "methodically harvests and structures textual and visual content from web sources, presenting organized datasets with clear provenance documentation.",
-    techStack: "#python, #streamlit, #langchain, #crawl4ai",
+      "methodically extracts and structures information from websites using browser automation and intelligent content parsing.",
+    techStack: "#python, #playwright, #openai, #pydantic",
     image: `${import.meta.env.BASE_URL}images/Robot_project3.png`,
     alt: "AI Web Scraping Agent",
     githubUrl: "https://github.com/yauheniya-ai/webscraping-agent",
