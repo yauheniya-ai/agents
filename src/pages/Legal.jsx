@@ -13,7 +13,7 @@ export default function Legal() {
           <h1>Legal Notice</h1>
         </div>
 
-        <div className="text-white-50 max-w-3xl">
+        <div className="text-white-50 max-w-3xl mt-32">
           <p>This website is owned and operated by:</p>
           <p className="mt-2">
             <strong>Yauheniya Varabyova</strong><br />
@@ -26,9 +26,6 @@ export default function Legal() {
           <p className="mt-4">
             For inquiries, please use the contact form provided on this website.
           </p>          
-          <p className="mt-4">
-            The site is hosted on GitHub Pages.
-          </p>
         </div>
       </div>
     </section>
