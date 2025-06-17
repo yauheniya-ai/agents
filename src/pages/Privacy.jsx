@@ -86,9 +86,6 @@ export default function Privacy() {
             </li>
           </ul>
 
-
-
-
           <p>
             <strong>Your Rights:</strong> You have the right to request access to, correction of, or deletion of your personal data collected through the contact form. To make such a request, please contact us via the contact form provided on this website.
           </p>
