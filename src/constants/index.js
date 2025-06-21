@@ -79,18 +79,18 @@ const firstColumnProjects = [
     title: "AI Research Agent",
     color: "var(--color-purple-100)",
     description:
-      "delves into scholarly databases and institutional repositories to deliver rigorously cited, academically grounded responses to multifaceted inquiries.",
-    techStack: "#python, #langchain, #langgraph, #google-gemini, #chromadb, #semanticscholar, #arxiv, #crossref, #openalex, #streamlit",
+      "leverages the Model Context Protocol (MCP) to systematically query arXiv's scholarly database, extracting and storing bibliographic metadata through structured tool interfaces.",
+    techStack: "#python, #mcp, #anthropic, #arxiv",
     image: `${import.meta.env.BASE_URL}images/Robot_project1.png`,
     alt: "AI Research Agent",
-    githubUrl: "https://github.com/yauheniya-ai/research-agent",
+    githubUrl: "https://github.com/yauheniya-ai/research-agent-mcp",
   },
   {
     id: "voice",
     title: "AI Voice Agent",
     color: "var(--color-pink-100)",
     description:
-      "that combines speech recognition, AI language processing, and high-quality text-to-speech for natural voice conversations.",
+      "combines speech recognition, AI language processing, and high-quality text-to-speech for natural voice conversations.",
     techStack: "#python, #livekit, #elevenlabs, #silero, #openai",
     image: `${import.meta.env.BASE_URL}images/Robot_project4.gif`,
     alt: "AI Voice Agent",
