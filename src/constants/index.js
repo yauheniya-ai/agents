@@ -40,9 +40,7 @@ const logoIconsList = [
   { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_elevenlabs.png` },
   { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_selenium.png` },
   { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_playwright.png` },
-  { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_plotly.png` },
-  { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_matplotlib.png` },
-  { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_seaborn.png` },
+  { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_mcp.png` },
   { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_django.png` },
   { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_fastapi.png` },
   { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_flask.png` },
@@ -71,6 +69,9 @@ const logoIconsList = [
   { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_crossref.png` },
   { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_openalex.png` },
   { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_wikipedia.png` },
+  { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_plotly.png` },
+  { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_matplotlib.png` },
+  { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_seaborn.png` },
 ];
 
 const firstColumnProjects = [
