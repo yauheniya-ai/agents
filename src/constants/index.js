@@ -152,7 +152,7 @@ const secondColumnProjects = [
     color: "var(--color-gold-100)",
     description:
       "triages incoming emails and generates responses for emails requiring replies. Features agent evaluation, human-in-the-loop, and memory. Designed to be connected to the Gmail API.",
-    techStack: "#python, #langchain, #langgraph, #langsmith, #gmail",
+    techStack: "#python, #langchain, #langgraph, #langsmith, #openai, #gmail",
     image: `${import.meta.env.BASE_URL}images/Robot_P6.png`,
     alt: "AI Email Agent",
     githubUrl: "https://github.com/yauheniya-ai/email-agent",
