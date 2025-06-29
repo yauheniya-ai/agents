@@ -16,7 +16,7 @@ const words = [
   { text: "Research", imgPath: `${import.meta.env.BASE_URL}images/agents/neuron.svg` },
   { text: "WebScraping", imgPath: `${import.meta.env.BASE_URL}images/agents/web.svg` },
   { text: "Voice", imgPath: `${import.meta.env.BASE_URL}images/agents/voice.svg` },
-  { text: "Monitoring", imgPath: `${import.meta.env.BASE_URL}images/agents/monitoring.svg` },
+  { text: "Email", imgPath: `${import.meta.env.BASE_URL}images/agents/at.svg` },
   { text: "Planning", imgPath: `${import.meta.env.BASE_URL}images/agents/planning.svg` },
   { text: "Review", imgPath: `${import.meta.env.BASE_URL}images/agents/review.svg` },
   { text: "Finance", imgPath: `${import.meta.env.BASE_URL}images/agents/finance.svg` },
@@ -133,6 +133,17 @@ const secondColumnProjects = [
     image: `${import.meta.env.BASE_URL}images/Robot_project5.png`,
     alt: "AI Coding Agent",
     githubUrl: "https://github.com/yauheniya-ai/github-agent",
+  },
+  {
+    id: "email",
+    title: "AI Email Agent",
+    color: "var(--color-gold-100)",
+    description:
+      "triages incoming emails and generates responses for emails requiring replies. Features agent evaluation, human-in-the-loop, and memory. Designed to be connected to the Gmail API.",
+    techStack: "#python, #langchain, #langgraph, #langsmith, #gmail",
+    image: `${import.meta.env.BASE_URL}images/Robot_project6.png`,
+    alt: "AI Email Agent",
+    githubUrl: "https://github.com/yauheniya-ai/email-agent",
   },
 ];
 
