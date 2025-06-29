@@ -103,7 +103,7 @@ const firstColumnProjects = [
     title: "AI Logistics Agent",
     color: "var(--color-blue-100)",
     description:
-      "intelligently parses the hospital order form to create a concise summary for the drone operator, incorporating human feedback through voice input using Gradio and OpenAI's Whisper API for real-time validation of extracted information",
+      "intelligently parses the hospital order form to create a concise summary for the drone operator, incorporating human feedback through voice input using OpenAI's Whisper API for real-time validation of extracted information",
     techStack: "#python, #llamaindex, #llamaparse, #openai, #whisper, #gradio",
     image: `${import.meta.env.BASE_URL}images/Robot_P7.png`,
     alt: "AI Logistics Agent",
