@@ -157,6 +157,17 @@ const secondColumnProjects = [
     alt: "AI Email Agent",
     githubUrl: "https://github.com/yauheniya-ai/email-agent",
   },
+  {
+    id: "planning",
+    title: "AI Planning Agent",
+    color: "var(--color-pink-100)",
+    description:
+      "schedules complex projects, such as building an electric motor production facility, based on user-defined tasks and resources. Features multi-agent integration including Ultimate Project Planner, Expert Estimation Analyst, and Resource Allocation Strategist.",
+    techStack: "#python, #crewai, #openai, #plotly",
+    image: `${import.meta.env.BASE_URL}images/Robot_P8.png`,
+    alt: "AI Planning Agent",
+    githubUrl: "https://github.com/yauheniya-ai/planning-agent",
+  },
 ];
 
 const socialImgs = [
