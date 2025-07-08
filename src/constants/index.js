@@ -18,7 +18,7 @@ const words = [
   { text: "Voice", imgPath: `${import.meta.env.BASE_URL}images/agents/voice.svg` },
   { text: "Email", imgPath: `${import.meta.env.BASE_URL}images/agents/at.svg` },
   { text: "Logistics", imgPath: `${import.meta.env.BASE_URL}images/agents/delivery.svg` },
-  { text: "Review", imgPath: `${import.meta.env.BASE_URL}images/agents/review.svg` },
+  { text: "Planning", imgPath: `${import.meta.env.BASE_URL}images/agents/planning.svg` },
   { text: "Finance", imgPath: `${import.meta.env.BASE_URL}images/agents/finance.svg` },
   { text: "Mapping", imgPath: `${import.meta.env.BASE_URL}images/agents/drone.svg` },
   { text: "Security", imgPath: `${import.meta.env.BASE_URL}images/agents/security.svg` },
