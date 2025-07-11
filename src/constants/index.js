@@ -114,7 +114,7 @@ const firstColumnProjects = [
   {
     id: "Finance",
     title: "AI Finance Agent",
-    color: "var(--color-purple-100)",
+    color: "var(--color-gold-100)",
     description:
       "is an intelligent, privacy-focused PyPI library that processes financial receipts and extracts structured data using local language and vision models.",
     techStack: "#python, #llama3.2-vision, #tesseract-ocr",
