@@ -117,7 +117,7 @@ const firstColumnProjects = [
     color: "var(--color-gold-100)",
     description:
       "is an intelligent, privacy-focused PyPI library that processes financial receipts and extracts structured data using local language and vision models.",
-    techStack: "#python, #llama3.2-vision, #tesseract-ocr",
+    techStack: "#python, #ollama, #tesseract-ocr",
     image: `${import.meta.env.BASE_URL}images/projects/P9.png`,
     alt: "AI Logistics Agent",
     border: true,
