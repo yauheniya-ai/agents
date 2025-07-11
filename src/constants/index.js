@@ -83,7 +83,7 @@ const firstColumnProjects = [
     description:
       "leverages the Model Context Protocol (MCP) to systematically query arXiv's scholarly database, extracting and storing bibliographic metadata through structured tool interfaces.",
     techStack: "#python, #mcp, #anthropic, #arxiv",
-    image: `${import.meta.env.BASE_URL}images/Robot_P1.png`,
+    image: `${import.meta.env.BASE_URL}images/projects/P1.png`,
     alt: "AI Research Agent",
     githubUrl: "https://github.com/yauheniya-ai/research-agent-mcp",
   },
@@ -94,7 +94,7 @@ const firstColumnProjects = [
     description:
       "combines speech recognition, AI language processing, and high-quality text-to-speech for natural voice conversations.",
     techStack: "#python, #livekit, #elevenlabs, #silero, #openai",
-    image: `${import.meta.env.BASE_URL}images/Robot_P4.gif`,
+    image: `${import.meta.env.BASE_URL}images/projects/P4.gif`,
     alt: "AI Voice Agent",
     border: true,
     githubUrl: "https://github.com/yauheniya-ai/voice-agent",
@@ -106,10 +106,22 @@ const firstColumnProjects = [
     description:
       "intelligently parses the hospital order form to create a concise summary for the drone operator, incorporating human feedback through voice input using OpenAI's Whisper API for real-time validation of extracted information",
     techStack: "#python, #llamaindex, #llamaparse, #openai, #whisper, #gradio",
-    image: `${import.meta.env.BASE_URL}images/Robot_P7.png`,
+    image: `${import.meta.env.BASE_URL}images/projects/P7.png`,
     alt: "AI Logistics Agent",
     border: true,
     githubUrl: "https://github.com/yauheniya-ai/logistics-agent",
+  },
+  {
+    id: "Finance",
+    title: "AI Finance Agent",
+    color: "var(--color-purple-100)",
+    description:
+      "is an intelligent, privacy-focused PyPI library that processes financial receipts and extracts structured data using local language and vision models.",
+    techStack: "#python, #llama3.2-vision, #tesseract-ocr",
+    image: `${import.meta.env.BASE_URL}images/projects/P9.png`,
+    alt: "AI Logistics Agent",
+    border: true,
+    githubUrl: "https://github.com/yauheniya-ai/ai-finance-agent",
   },
 ];
 
@@ -121,7 +133,7 @@ const secondColumnProjects = [
     description:
       "curates precise legal excerpts relevant to specified jurisdictional queries.",
     techStack: "#python, #langchain, #faiss, #langgraph, #google-gemini",
-    image: `${import.meta.env.BASE_URL}images/Robot_P2.png`,
+    image: `${import.meta.env.BASE_URL}images/projects/P2.png`,
     alt: "AI Legal Agent",
     githubUrl: "https://github.com/yauheniya-ai/legal-agent",
   },
@@ -132,7 +144,7 @@ const secondColumnProjects = [
     description:
       "methodically extracts and structures information from websites using browser automation and intelligent content parsing.",
     techStack: "#python, #playwright, #openai, #pydantic",
-    image: `${import.meta.env.BASE_URL}images/Robot_P3.png`,
+    image: `${import.meta.env.BASE_URL}images/projects/P3.png`,
     alt: "AI Web Scraping Agent",
     githubUrl: "https://github.com/yauheniya-ai/webscraping-agent",
   },
@@ -143,7 +155,7 @@ const secondColumnProjects = [
     description:
       "currently analyzes GitHub issues with natural language queries, designed for future extension to full codebase analysis, debugging, and automated development tasks.",
     techStack: "#python, #langchain, #astradb, #openai, #github",
-    image: `${import.meta.env.BASE_URL}images/Robot_P5.png`,
+    image: `${import.meta.env.BASE_URL}images/projects/P5.png`,
     alt: "AI Coding Agent",
     githubUrl: "https://github.com/yauheniya-ai/github-agent",
   },
@@ -154,7 +166,7 @@ const secondColumnProjects = [
     description:
       "triages incoming emails and generates responses for emails requiring replies. Features agent evaluation, human-in-the-loop, and memory. Designed to be connected to the Gmail API.",
     techStack: "#python, #langchain, #langgraph, #langsmith, #openai, #gmail",
-    image: `${import.meta.env.BASE_URL}images/Robot_P6.png`,
+    image: `${import.meta.env.BASE_URL}images/projects/P6.png`,
     alt: "AI Email Agent",
     githubUrl: "https://github.com/yauheniya-ai/email-agent",
   },
@@ -165,7 +177,7 @@ const secondColumnProjects = [
     description:
       "schedules complex projects, such as building an electric motor production facility, based on user-defined tasks and resources. Features multi-agent integration including Ultimate Project Planner, Expert Estimation Analyst, and Resource Allocation Strategist.",
     techStack: "#python, #crewai, #openai, #plotly",
-    image: `${import.meta.env.BASE_URL}images/Robot_P8.png`,
+    image: `${import.meta.env.BASE_URL}images/projects/P8.png`,
     alt: "AI Planning Agent",
     githubUrl: "https://github.com/yauheniya-ai/planning-agent",
   },
