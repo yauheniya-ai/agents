@@ -119,9 +119,21 @@ const firstColumnProjects = [
       "is an intelligent, privacy-focused PyPI library that processes financial receipts and extracts structured data using local language and vision models.",
     techStack: "#python, #ollama, #tesseract-ocr",
     image: `${import.meta.env.BASE_URL}images/projects/P09.png`,
-    alt: "AI Logistics Agent",
+    alt: "AI Finance Agent",
     border: true,
     githubUrl: "https://github.com/yauheniya-ai/ai-finance-agent",
+  },
+  {
+    id: "mapping",
+    title: "Mapping Automation Agent",
+    color: "var(--color-green-100)",
+    description:
+      "is an automation tool for processing LiDAR point clouds and generating structured terrain insights using local geospatial and AI models.",
+    techStack: "#drone, #lidar, #python, #laspy, #rasterio, #open3d, #matplotlib",
+    image: `${import.meta.env.BASE_URL}images/projects/P11.gif`,
+    alt: "Mapping Automation Agent",
+    border: true,
+    githubUrl: "https://github.com/yauheniya-ai/mapping-agent",
   },
 ];
 

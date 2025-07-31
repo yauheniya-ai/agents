@@ -162,6 +162,7 @@ const AppShowcase = () => {
                     <img src={cardData.image} alt={cardData.alt} />
                     {/* Add Tenor attribution only for the Voice Agent project */}
                     {cardData.id === "voice" && <TenorAttribution />}
+                    {cardData.id === "mapping" && <TenorAttribution />}
                     {cardData.githubUrl && <GitHubIcon cardData={cardData} />}
                   </div>
                   <div className="text-content">
