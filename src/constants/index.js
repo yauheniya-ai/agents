@@ -128,7 +128,7 @@ const firstColumnProjects = [
     title: "Mapping Automation Agent",
     color: "var(--color-green-100)",
     description:
-      "is an automation tool for processing LiDAR point clouds and generating structured terrain insights using local geospatial and AI models.",
+      "is an automation tool for processing LiDAR point clouds and generating structured terrain insights using local geospatial models.",
     techStack: "#drone, #lidar, #python, #laspy, #rasterio, #open3d, #matplotlib",
     image: `${import.meta.env.BASE_URL}images/projects/P11.gif`,
     alt: "Mapping Automation Agent",
