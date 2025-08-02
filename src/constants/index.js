@@ -10,16 +10,16 @@ const navLinks = [
 ];
 
 const words = [
-  { text: "Coding", imgPath: `${import.meta.env.BASE_URL}images/agents/data.svg` },
-  { text: "Creative", imgPath: `${import.meta.env.BASE_URL}images/agents/designs.svg` },
-  { text: "Legal", imgPath: `${import.meta.env.BASE_URL}images/agents/legal.svg` },
   { text: "Research", imgPath: `${import.meta.env.BASE_URL}images/agents/neuron.svg` },
-  { text: "WebScraping", imgPath: `${import.meta.env.BASE_URL}images/agents/web.svg` },
+  { text: "Legal", imgPath: `${import.meta.env.BASE_URL}images/agents/legal.svg` },
+  { text: "Web Scraping", imgPath: `${import.meta.env.BASE_URL}images/agents/web.svg` },  
   { text: "Voice", imgPath: `${import.meta.env.BASE_URL}images/agents/voice.svg` },
+  { text: "Coding", imgPath: `${import.meta.env.BASE_URL}images/agents/data.svg` },  
   { text: "Email", imgPath: `${import.meta.env.BASE_URL}images/agents/at.svg` },
   { text: "Logistics", imgPath: `${import.meta.env.BASE_URL}images/agents/delivery.svg` },
   { text: "Planning", imgPath: `${import.meta.env.BASE_URL}images/agents/gantt.svg` },
   { text: "Finance", imgPath: `${import.meta.env.BASE_URL}images/agents/finance.svg` },
+  { text: "Quantum Computing", imgPath: `${import.meta.env.BASE_URL}images/agents/quantum.svg` },
   { text: "Mapping", imgPath: `${import.meta.env.BASE_URL}images/agents/drone.svg` },
   { text: "Security", imgPath: `${import.meta.env.BASE_URL}images/agents/security.svg` },
 ];
@@ -53,6 +53,7 @@ const logoIconsList = [
   { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_neon.png` },
   { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_cloudinary.png` },
   { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_streamlit.png` },
+  { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_gradio.png` },
   { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_vercel.png` },
   { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_render.png` },
   { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_huggingface.png` },
@@ -66,13 +67,10 @@ const logoIconsList = [
   { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_openai.png` },
   { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_deepseek.png` },
   { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_arxiv.png` },
-  { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_semanticscholar.png` },
-  { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_crossref.png` },
-  { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_openalex.png` },
-  { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_wikipedia.png` },
   { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_plotly.png` },
   { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_matplotlib.png` },
   { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_seaborn.png` },
+  { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_qiskit.png` },
 ];
 
 const firstColumnProjects = [
@@ -151,7 +149,7 @@ const secondColumnProjects = [
   },
   {
     id: "webScraping",
-    title: "AI WebScraping Agent",
+    title: "AI Web Scraping Agent",
     color: "var(--color-blue-100)",
     description:
       "methodically extracts and structures information from websites using browser automation and intelligent content parsing.",
