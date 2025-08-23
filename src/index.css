@@ -547,3 +547,10 @@ section {
 .card:hover::before {
   opacity: 1;
 }
+
+@media (max-width: 768px) {
+  .first-project-wrapper .text-content h2 {
+    @apply text-lg font-semibold;
+  }
+}
+
