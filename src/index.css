@@ -554,3 +554,8 @@ section {
   }
 }
 
+@media (max-width: 768px) {
+  .card {
+    padding: 1.5rem !important; /* Reduces from p-10 (2.5rem) to 1rem */
+  }
+}
