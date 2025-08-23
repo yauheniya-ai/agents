@@ -12,14 +12,14 @@ const navLinks = [
 const words = [
   { text: "Research", imgPath: `${import.meta.env.BASE_URL}images/agents/neuron.svg` },
   { text: "Legal", imgPath: `${import.meta.env.BASE_URL}images/agents/legal.svg` },
-  { text: "Web Scraping", imgPath: `${import.meta.env.BASE_URL}images/agents/web.svg` },  
+  { text: "Web", imgPath: `${import.meta.env.BASE_URL}images/agents/web.svg` },  
   { text: "Voice", imgPath: `${import.meta.env.BASE_URL}images/agents/voice.svg` },
   { text: "Coding", imgPath: `${import.meta.env.BASE_URL}images/agents/data.svg` },  
   { text: "Email", imgPath: `${import.meta.env.BASE_URL}images/agents/at.svg` },
   { text: "Logistics", imgPath: `${import.meta.env.BASE_URL}images/agents/delivery.svg` },
   { text: "Planning", imgPath: `${import.meta.env.BASE_URL}images/agents/gantt.svg` },
   { text: "Finance", imgPath: `${import.meta.env.BASE_URL}images/agents/finance.svg` },
-  { text: "Quantum Computing", imgPath: `${import.meta.env.BASE_URL}images/agents/quantum.svg` },
+  { text: "Quantum", imgPath: `${import.meta.env.BASE_URL}images/agents/quantum.svg` },
   { text: "Mapping", imgPath: `${import.meta.env.BASE_URL}images/agents/drone.svg` },
   { text: "Security", imgPath: `${import.meta.env.BASE_URL}images/agents/security.svg` },
 ];
