@@ -208,7 +208,7 @@ const secondColumnProjects = [
     color: "var(--color-blue-100)",
     description:
       "automatically detects and tracks drones in real-time using YOLOv8 computer vision to enhance security monitoring and airspace surveillance.",
-    techStack: "#uav, #python, #YOLOv8, #cv2, #matplotlib",
+    techStack: "#uav, #roboflow, #python, #YOLOv8, #cv2, #matplotlib",
     image: `${import.meta.env.BASE_URL}images/projects/P12.png`,
     alt: "AI Security Agent",
     githubUrl: "https://github.com/yauheniya-ai/security-agent",
