@@ -25,60 +25,95 @@ const words = [
 ];
 
 const logoIconsList = [
-  { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_github.png` },
-  { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_python.png` },
-  { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_java.png` },
-  { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_pytorch.png` },
-  { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_tensorflow.png` },
-  { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_keras.png` },
-  { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_ultralytics.png` },
-  { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_roboflow.png` },
-  { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_qiskit.png` },
-  { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_scikitlearn.png` },
-  { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_langchain.png` },
-  { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_langgraph.png` },
-  { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_langsmith.png` },
-  { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_llamaindex.png` },
-  { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_crewai.png` },
-  { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_langflow.png` },
-  { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_vapi.png` },
-  { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_livekit.png` },
-  { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_elevenlabs.png` },
-  { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_selenium.png` },
-  { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_playwright.png` },
-  { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_mcp.png` },
-  { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_django.png` },
-  { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_fastapi.png` },
-  { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_flask.png` },
-  { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_spring.png` },
-  { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_react.png` },
-  { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_threejs.png` },
-  { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_chroma.png` },
-  { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_astradb.png` },
-  { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_postgresql.png` },
-  { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_neon.png` },
-  { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_cloudinary.png` },
-  { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_streamlit.png` },
-  { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_gradio.png` },
-  { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_vercel.png` },
-  { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_render.png` },
-  { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_huggingface.png` },
-  { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_docker.png` },
-  { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_tavily.png` },
-  { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_duckduckgo.png` },
-  { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_groq.png` },
-  { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_ollama.png` },
-  { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_gemini.png` },  
-  { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_claude.png` },
-  { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_openai.png` },
-  { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_deepseek.png` },
-  { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_arxiv.png` },
-  { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_plotly.png` },
-  { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_matplotlib.png` },
-  { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_seaborn.png` },
+// Languages
+{ imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_python.png` },
+{ imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_java.png` },
 
+// Machine Learning Frameworks
+{ imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_pytorch.png` },
+{ imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_tensorflow.png` },
+{ imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_keras.png` },
+{ imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_scikitlearn.png` },
 
+// Quantum Computing Frameworks
+{ imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_qiskit.png` },
+{ imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_pennylane.png` },
 
+// Large Language Model (LLM) and AI Toolkits
+{ imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_langchain.png` },
+{ imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_langgraph.png` },
+{ imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_langsmith.png` },
+{ imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_llamaindex.png` },
+{ imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_crewai.png` },
+{ imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_langflow.png` },
+
+// APIs / Integration Platforms
+{ imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_vapi.png` },
+
+// Real-Time Communication / Voice / Video Tools
+{ imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_livekit.png` },
+{ imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_elevenlabs.png` },
+
+// Web Testing Frameworks
+{ imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_selenium.png` },
+{ imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_playwright.png` },
+
+// Code / Platform Management
+{ imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_mcp.png` },
+
+// Web Frameworks / Backend Frameworks
+{ imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_django.png` },
+{ imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_fastapi.png` },
+{ imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_flask.png` },
+{ imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_spring.png` },
+
+// Frontend Frameworks / Libraries / UI
+{ imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_react.png` },
+{ imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_threejs.png` },
+
+// Data / Vector Search / Databases
+{ imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_chroma.png` },
+{ imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_astradb.png` },
+{ imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_postgresql.png` },
+{ imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_neon.png` },
+
+// Cloud Services / Media Management
+{ imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_cloudinary.png` },
+
+// Data Science / Visualization
+{ imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_streamlit.png` },
+{ imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_gradio.png` },
+{ imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_plotly.png` },
+{ imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_matplotlib.png` },
+{ imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_seaborn.png` },
+
+// Software Development Platforms / Version Control
+{ imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_github.png` },
+
+// Containerization / DevOps
+{ imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_docker.png` },
+
+// Hosting / Deployment Platforms
+{ imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_vercel.png` },
+{ imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_render.png` },
+
+// AI Platform Providers
+{ imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_huggingface.png` },
+{ imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_openai.png` },
+{ imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_groq.png` },
+{ imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_ollama.png` },
+{ imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_gemini.png` },
+{ imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_claude.png` },
+{ imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_deepseek.png` },
+{ imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_zai.png` },
+
+// Computer Vision / AI Model Tools
+{ imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_blackforestlabs.png` },
+{ imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_ultralytics.png` },
+{ imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_roboflow.png` },
+
+// Research Archives
+{ imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_arxiv.png` },
 
 ];
 
