@@ -27,8 +27,13 @@ const words = [
 const logoIconsList = [
   { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_github.png` },
   { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_python.png` },
+  { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_java.png` },
+  { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_pytorch.png` },
   { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_tensorflow.png` },
   { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_keras.png` },
+  { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_ultralytics.png` },
+  { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_roboflow.png` },
+  { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_qiskit.png` },
   { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_scikitlearn.png` },
   { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_langchain.png` },
   { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_langgraph.png` },
@@ -45,6 +50,7 @@ const logoIconsList = [
   { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_django.png` },
   { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_fastapi.png` },
   { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_flask.png` },
+  { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_spring.png` },
   { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_react.png` },
   { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_threejs.png` },
   { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_chroma.png` },
@@ -70,7 +76,10 @@ const logoIconsList = [
   { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_plotly.png` },
   { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_matplotlib.png` },
   { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_seaborn.png` },
-  { imgPath: `${import.meta.env.BASE_URL}images/logos/logo+company_qiskit.png` },
+
+
+
+
 ];
 
 const firstColumnProjects = [
