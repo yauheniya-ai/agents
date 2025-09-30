@@ -34,7 +34,7 @@ const Technology = () => (
       />
 
       {/* Hover Grid Top */}
-      <div className="w-full flex justify-center items-center mt-32">
+      <div className="w-full flex justify-center items-center mt-16">
         <div className="relative w-full max-w-full px-4">
           <HoverGrid />
         </div>
