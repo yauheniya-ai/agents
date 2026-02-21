@@ -1,8 +1,10 @@
 # AI Agents
 
-This portfolio is built with **React**, **Three.js**, and **TailwindCSS**, and showcases different **AI agents** — each designed for specialized tasks such as research, legal analysis, voice interaction, coding assistance, or web scraping.
+This portfolio is built with ![React Icon](https://api.iconify.design/devicon:react.svg) **React**, ![Three Icon](https://api.iconify.design/devicon:threejs.svg) **Three.js**, and ![TailwindCSS Icon](https://api.iconify.design/devicon:tailwindcss.svg) **TailwindCSS**, and showcases different **AI agents** — each designed for specialized tasks. 
 
-It leverages cutting-edge technologies like **LangChain**, **LlamaIndex**, **LangGraph**, **LangSmith**, and others to enable advanced AI use cases such as **Retrieval-Augmented Generation (RAG)**, autonomous agents, and multimodal interaction.
+The agents leverage cutting-edge frameworks like **LangChain**, **LangGraph**, **LangSmith**, **LlamaIndex**, and others to enable advanced AI use cases such as research, legal analysis, voice interaction, coding assistance, web scraping, and more.
+
+
 
 ### Screenshot
 
