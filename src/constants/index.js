@@ -163,7 +163,7 @@ const firstColumnProjects = [
     image: `${import.meta.env.BASE_URL}images/projects/P09.png`,
     alt: "AI Finance Agent",
     border: true,
-    githubUrl: "https://github.com/yauheniya-ai/ai-finance-agent",
+    githubUrl: "https://github.com/yauheniya-ai/finanzamt",
   },
   {
     id: "mapping",

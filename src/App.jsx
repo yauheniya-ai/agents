@@ -7,7 +7,7 @@ import Contact from "./sections/Contact";
 import Footer from "./sections/Footer";
 import Legal from "./pages/Legal";
 import Privacy from "./pages/Privacy";
-import ScrollToHash from "./components/ScrollToHash"; // Import ScrollToHash
+import ScrollToHash from "./components/ScrollToHash"; 
 
 const Home = () => (
   <>
