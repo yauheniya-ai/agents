@@ -6,7 +6,7 @@ It leverages cutting-edge technologies like **LangChain**, **LlamaIndex**, **Lan
 
 ### Screenshot
 
-![AI Agents Portfolio Screenshot](images/Screenshot.png)
+![AI Agents Portfolio Screenshot](https://github.com/yauheniya-ai/agents/raw/9537c5603f53c92f207327090c2bba4404b30827/public/images/Screenshot.png)
 
 ### Deployment Link
 You can view the live version of this portfolio here: [AI Agents Portfolio](https://yauheniya-ai.github.io/agents)
